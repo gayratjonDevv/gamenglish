@@ -19,6 +19,12 @@ export type MissionStep = {
   correct?: string[];
   hint?: string;
   skill?: string;
+  staging?: {
+    minimumSeconds: number;
+    waitingText: string;
+    autoAdvance?: boolean;
+    cues: ActingCue[];
+  };
 };
 export type MissionStory = {
   id: string;
@@ -30,6 +36,19 @@ export type MissionStory = {
 export type MissionSceneEvent =
   | { type: 'ready' }
   | { type: 'arrived' }
+  | { type: 'line-ready'; stepId: string }
+  | { type: 'staged'; stepId: string }
   | { type: 'loading'; text: string; progress: number }
   | { type: 'error'; text: string };
 export type MissionActorId = 'child' | 'mother' | 'neighbor';
+
+export type ActingCue = {
+  at: number;
+  actor?: MissionActorId;
+  look?: MissionActorId;
+  turn?: boolean;
+  motion?: 'idle' | 'listen' | 'talk' | 'greet';
+  emotion?: 'calm' | 'happy' | 'unsure' | 'listening';
+  camera?: MissionShot;
+  line?: boolean;
+};

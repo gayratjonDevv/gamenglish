@@ -8,13 +8,20 @@ import {
   Vector2,
   Vector3,
 } from 'three';
-import type { MissionActorId, MissionStep, MissionTime } from '@gamenglish/contracts';
+import type {
+  MissionActorId,
+  MissionSceneEvent,
+  MissionStep,
+  MissionTime,
+} from '@gamenglish/contracts';
 import type { MissionAssets } from './MissionAssets';
 import { MissionActor } from './MissionActor';
+import { EncounterActing } from './EncounterActing';
 import { createMissionTown, type Town } from './MissionTown';
 export class MissionWorld {
   readonly scene = new Scene();
   readonly actors: MissionActor[];
+  readonly acting: EncounterActing;
   readonly sun = new DirectionalLight(0xffedcf, 3.2);
   private ambient = new HemisphereLight(0xeaf3ff, 0x817f66, 1.3);
   private town: Town;
@@ -28,6 +35,7 @@ export class MissionWorld {
   constructor(
     assets: MissionAssets,
     private onArrival: () => void,
+    emit: (event: MissionSceneEvent) => void = () => {},
   ) {
     this.town = createMissionTown(assets.city.scene);
     this.scene.add(this.town.root, this.ambient, this.sun);
@@ -51,8 +59,9 @@ export class MissionWorld {
     this.actors = roles.map(
       (role) => new MissionActor(assets.boy.scene, role, assets.boy.animations),
     );
+    this.acting = new EncounterActing(this.actors, emit);
     this.place('child', 8, -14.6);
-    this.place('mother', 9.5, -14.9);
+    this.place('mother', 7.1, -14.2);
     this.place('neighbor', 15.2, -14.9);
     for (const actor of this.actors) this.scene.add(actor.root);
   }
@@ -76,9 +85,10 @@ export class MissionWorld {
     return height;
   }
   setStep(step: MissionStep) {
+    if (this.step?.id === step.id) return;
     if (step.id === 'welcome') {
       this.place('child', 8, -14.6);
-      this.place('mother', 9.5, -14.9);
+      this.place('mother', 7.1, -14.2);
       this.place('neighbor', 15.2, -14.9);
       this.neighborDeparting = false;
     }
@@ -105,9 +115,10 @@ export class MissionWorld {
     this.setSpeaking(false);
     const id =
       step.speaker === 'Ona' ? 'mother' : step.speaker === 'Qo‘shni' ? 'neighbor' : 'child';
+    this.acting.begin(step);
     this.actors.forEach((actor) => {
-      actor.waving = actor.id === id && step.gesture === 'wave';
-      actor.presenting = actor.id === id && step.speaker !== 'Vazifa';
+      actor.waving = !step.staging && actor.id === id && step.gesture === 'wave';
+      actor.presenting = !step.staging && actor.id === id && step.speaker !== 'Vazifa';
       actor.listening = actor.id !== id;
       actor.face.emotion =
         actor.id === 'child' && step.id === 'worry'
@@ -199,7 +210,7 @@ export class MissionWorld {
     }
     if (this.step?.kind !== 'travel') {
       this.approach(mother, child.root.position.x - 0.9, child.root.position.z + 0.4, delta);
-      if (!this.neighborDeparting)
+      if (!this.neighborDeparting && (this.step?.chapter ?? 0) > 0)
         this.approach(
           neighbor,
           Math.min(21.8, child.root.position.x + 2.4),
@@ -207,14 +218,8 @@ export class MissionWorld {
           delta,
         );
     }
-    for (const actor of this.actors) {
-      if (!actor.moving) {
-        const partner =
-          actor.id === 'child' ? (this.step?.speaker === 'Ona' ? mother : neighbor) : child;
-        actor.faceToward(partner.root.position.x, partner.root.position.z);
-      }
-      actor.update(delta, time, this.reducedMotion);
-    }
+    this.acting.update(delta * (this.reducedMotion ? 0.65 : 1));
+    for (const actor of this.actors) actor.update(delta, time, this.reducedMotion);
   }
   private approach(actor: MissionActor, x: number, z: number, delta: number) {
     const direction = new Vector2(x - actor.root.position.x, z - actor.root.position.z);

@@ -1,19 +1,18 @@
-import type { Dispatch } from 'react';
-import type { MissionStep } from '@gamenglish/contracts';
-import type { MissionAction, MissionState } from '@gamenglish/learning';
 import { Button } from '../../../shared/ui';
-import type { useMissionAudio } from '../model/useMissionAudio';
+import type { MissionDialogueProps } from '../model/dialogue';
+import { DialogueActions } from './DialogueActions';
 import { VoicePractice } from './VoicePractice';
 import styles from './dialogue.module.css';
-type Props = {
-  step: MissionStep;
-  state: MissionState;
-  audio: ReturnType<typeof useMissionAudio>;
-  dispatch: Dispatch<MissionAction>;
-  walk: () => void;
-};
-export function MissionDialogue({ step, state, audio, dispatch, walk }: Props) {
-  const advance = () => dispatch({ type: 'advance' });
+
+export function MissionDialogue({
+  step,
+  state,
+  audio,
+  dispatch,
+  walk,
+  lineReady,
+  stageComplete,
+}: MissionDialogueProps) {
   return (
     <section className={styles.dialogue} aria-label="Suhbat va mashq">
       <div className={styles.speakerRow}>
@@ -45,20 +44,22 @@ export function MissionDialogue({ step, state, audio, dispatch, walk }: Props) {
         </span>
       </div>
       <p
-        className={step.english ? styles.english : styles.transcript}
-        lang={step.english ? 'en' : 'uz'}
+        className={step.english && lineReady ? styles.english : styles.transcript}
+        lang={step.english && lineReady ? 'en' : 'uz'}
       >
-        {step.text}
+        {lineReady ? step.text : (step.staging?.waitingText ?? 'Sahna tayyorlanmoqda…')}
       </p>
-      {step.word && !step.english && (
+      {lineReady && step.word && !step.english && (
         <div className={styles.word}>
           <strong lang="en">{step.word}</strong>
           <span>{step.translation}</span>
         </div>
       )}
-      {step.english && step.translation && <p className={styles.translation}>{step.translation}</p>}
-      {step.kind === 'repeat' && <VoicePractice />}
-      {step.kind === 'choice' && (
+      {lineReady && step.english && step.translation && (
+        <p className={styles.translation}>{step.translation}</p>
+      )}
+      {lineReady && step.kind === 'repeat' && <VoicePractice />}
+      {lineReady && step.kind === 'choice' && (
         <div className={styles.choices} aria-label="Javobni tanlang">
           {step.options?.map((answer, index) => (
             <Button
@@ -82,35 +83,15 @@ export function MissionDialogue({ step, state, audio, dispatch, walk }: Props) {
           {audio.error}
         </p>
       )}
-      <div className={styles.actions}>
-        <div>
-          {audio.has(step.id) && (
-            <Button onClick={() => (audio.playing ? audio.stop() : audio.play(step.id))}>
-              {audio.playing ? 'Ovozni to‘xtatish' : 'Qayta eshitish'}
-            </Button>
-          )}
-          {step.kind === 'choice' && !state.accepted && (
-            <Button onClick={() => dispatch({ type: 'hint' })}>Onamdan yordam</Button>
-          )}
-        </div>
-        {step.kind === 'travel' ? (
-          <Button variant="primary" onClick={state.arrived ? advance : walk}>
-            {state.arrived ? 'Yetib keldik →' : 'Onam bilan yurish →'}
-          </Button>
-        ) : (
-          <Button
-            variant="primary"
-            disabled={step.kind === 'choice' && !state.accepted}
-            onClick={advance}
-          >
-            {step.kind === 'repeat'
-              ? 'Ovoz chiqarib takrorladim →'
-              : state.accepted
-                ? 'Davom etamiz →'
-                : 'Davom etish →'}
-          </Button>
-        )}
-      </div>
+      <DialogueActions
+        step={step}
+        state={state}
+        audio={audio}
+        dispatch={dispatch}
+        walk={walk}
+        lineReady={lineReady}
+        stageComplete={stageComplete}
+      />
     </section>
   );
 }

@@ -238,3 +238,4 @@ export type {
   MissionSceneEvent,
   MissionActorId,
 } from './mission';
+export type { ActingCue } from './mission';

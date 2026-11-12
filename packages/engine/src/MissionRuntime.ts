@@ -61,7 +61,7 @@ export class MissionRuntime {
       }
       this.assets = assets;
       this.emit({ type: 'loading', text: 'Sahna va yoritish tayyorlanmoqda…', progress: 0.9 });
-      this.world = new MissionWorld(assets, () => this.emit({ type: 'arrived' }));
+      this.world = new MissionWorld(assets, () => this.emit({ type: 'arrived' }), this.emit);
       this.environment = createMissionLighting(this.renderer);
       this.world.scene.environment = this.environment.texture;
       this.world.scene.environmentIntensity = 0.45;
@@ -124,7 +124,7 @@ export class MissionRuntime {
     this.elapsed += delta;
     if (!this.paused) this.world.update(delta, this.elapsed, this.input.direction());
     this.camera.update(
-      this.step?.shot ?? 'wide',
+      this.world.acting.shot,
       this.world.actors,
       delta,
       this.firstFrame || this.reducedMotion,

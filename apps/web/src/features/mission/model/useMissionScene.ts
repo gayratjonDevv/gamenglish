@@ -10,6 +10,7 @@ export function useMissionScene(step: MissionStep, paused: boolean, arrived: () 
   const [loading, setLoading] = useState('Modellar tayyorlanmoqda…');
   const [progress, setProgress] = useState(0);
   const [error, setError] = useState('');
+  const [performance, setPerformance] = useState({ stepId: '', lineReady: false, complete: false });
   const [revision, setRevision] = useState(0);
   useEffect(() => {
     let closed = false;
@@ -33,6 +34,19 @@ export function useMissionScene(step: MissionStep, paused: boolean, arrived: () 
           }
           if (event.type === 'error') setError(event.text);
           if (event.type === 'arrived') callbacks.current.arrived();
+          if (
+            (event.type === 'line-ready' || event.type === 'staged') &&
+            event.stepId === callbacks.current.step.id
+          ) {
+            setPerformance((current) => ({
+              stepId: event.stepId,
+              lineReady:
+                event.type === 'line-ready' ||
+                (current.stepId === event.stepId && current.lineReady),
+              complete:
+                event.type === 'staged' || (current.stepId === event.stepId && current.complete),
+            }));
+          }
         });
         runtime.current = instance;
         instance.setStep(callbacks.current.step);
@@ -57,6 +71,8 @@ export function useMissionScene(step: MissionStep, paused: boolean, arrived: () 
   }, [paused, ready]);
   return {
     canvas,
+    lineReady: performance.stepId === step.id && performance.lineReady,
+    staged: performance.stepId === step.id && performance.complete,
     ready,
     loading,
     progress,

@@ -1,5 +1,7 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { Button } from '../../../shared/ui';
+import { useEncounterPlayback } from '../model/useEncounterPlayback';
+import { useMissionPause } from '../model/useMissionPause';
 import { useMissionDirector } from '../model/useMissionDirector';
 import { useMissionScene } from '../model/useMissionScene';
 import { useMissionAudio, type AudioMode } from '../model/useMissionAudio';
@@ -15,23 +17,17 @@ export function MissionScreen() {
   const director = useMissionDirector();
   const [started, setStarted] = useState(false);
   const [portrait, setPortrait] = useState(false);
-  const [panel, setPanel] = useState<'none' | 'menu' | 'journal'>('none');
+  const [panel, setPanel] = useMissionPause(started);
   const [mode, setMode] = useState<AudioMode>('subtitles');
   const scene = useMissionScene(director.step, !started || panel !== 'none', () =>
     director.dispatch({ type: 'arrived' }),
   );
-  const audio = useMissionAudio(director.step.id, started && panel === 'none', mode);
-  useEffect(() => {
-    scene.speak(audio.playing);
-  }, [audio.playing, director.step.id, scene.ready]);
-  useEffect(() => {
-    const escape = (event: KeyboardEvent) => {
-      if (event.key === 'Escape' && started)
-        setPanel((value) => (value === 'none' ? 'menu' : 'none'));
-    };
-    window.addEventListener('keydown', escape);
-    return () => window.removeEventListener('keydown', escape);
-  }, [started]);
+  const audio = useMissionAudio(
+    director.step.id,
+    started && panel === 'none' && scene.lineReady,
+    mode,
+  );
+  useEncounterPlayback(director, scene, audio, started && panel === 'none');
   const begin = (selected: AudioMode) => {
     setMode(selected);
     setStarted(true);
@@ -88,6 +84,7 @@ export function MissionScreen() {
             journal={() => setPanel('journal')}
             restart={() => {
               director.dispatch({ type: 'restart' });
+              scene.retry();
               setStarted(false);
             }}
           />
@@ -99,6 +96,8 @@ export function MissionScreen() {
             audio={audio}
             dispatch={director.dispatch}
             walk={scene.walk}
+            lineReady={scene.lineReady}
+            stageComplete={scene.staged}
           />
         ))}
       {started &&
@@ -114,6 +113,7 @@ export function MissionScreen() {
           close={() => setPanel('none')}
           restart={() => {
             director.dispatch({ type: 'restart' });
+            scene.retry();
             setPanel('none');
             setStarted(false);
           }}

@@ -18,7 +18,35 @@
       "text": "Kel, o‘g‘lim. Yangi mahallamizni bir ko‘rib chiqamiz. Bu yerda birga yangi do‘stlar topamiz.",
       "kind": "dialogue",
       "shot": "wide",
-      "cue": "intro"
+      "cue": "intro",
+      "staging": {
+        "minimumSeconds": 3.8,
+        "waitingText": "Ona o‘g‘liga yuzlanmoqda…",
+        "autoAdvance": false,
+        "cues": [
+          {
+            "at": 0,
+            "actor": "child",
+            "look": "mother",
+            "motion": "listen",
+            "turn": false
+          },
+          {
+            "at": 0.4,
+            "actor": "mother",
+            "look": "child",
+            "motion": "talk",
+            "camera": "mother",
+            "turn": true,
+            "line": true
+          },
+          {
+            "at": 2.8,
+            "actor": "mother",
+            "motion": "listen"
+          }
+        ]
+      }
     },
     {
       "id": "worry",
@@ -26,7 +54,36 @@
       "speaker": "Bola",
       "text": "Men inglizcha gapirishni bilmayman-ku…",
       "kind": "dialogue",
-      "shot": "child"
+      "shot": "child",
+      "staging": {
+        "minimumSeconds": 3.0,
+        "waitingText": "Bola onasiga qaramoqda…",
+        "autoAdvance": false,
+        "cues": [
+          {
+            "at": 0,
+            "actor": "child",
+            "look": "mother",
+            "motion": "listen",
+            "turn": false,
+            "emotion": "unsure"
+          },
+          {
+            "at": 0.4,
+            "actor": "child",
+            "look": "mother",
+            "motion": "talk",
+            "camera": "child",
+            "turn": true,
+            "line": true
+          },
+          {
+            "at": 2.0,
+            "actor": "child",
+            "motion": "listen"
+          }
+        ]
+      }
     },
     {
       "id": "promise",
@@ -34,7 +91,36 @@
       "speaker": "Ona",
       "text": "Birga o‘rganamiz. Men yoningdaman. Avval qo‘shnimiz bilan salomlashamiz.",
       "kind": "dialogue",
-      "shot": "mother"
+      "shot": "mother",
+      "staging": {
+        "minimumSeconds": 4,
+        "waitingText": "Ona bolani xotirjam qilmoqda…",
+        "autoAdvance": false,
+        "cues": [
+          {
+            "at": 0,
+            "actor": "mother",
+            "look": "child",
+            "motion": "listen",
+            "turn": false,
+            "emotion": "calm"
+          },
+          {
+            "at": 0.5,
+            "actor": "mother",
+            "look": "child",
+            "motion": "talk",
+            "camera": "mother",
+            "turn": true,
+            "line": true
+          },
+          {
+            "at": 3,
+            "actor": "mother",
+            "motion": "listen"
+          }
+        ]
+      }
     },
     {
       "id": "walk",
@@ -52,8 +138,72 @@
       "text": "Hello!",
       "kind": "dialogue",
       "shot": "neighbor",
-      "gesture": "wave",
-      "english": true
+      "english": true,
+      "staging": {
+        "minimumSeconds": 3.5,
+        "waitingText": "Qo‘shnimiz bizni payqadi…",
+        "autoAdvance": true,
+        "cues": [
+          {
+            "at": 0,
+            "actor": "neighbor",
+            "look": "child",
+            "motion": "listen",
+            "camera": "conversation",
+            "turn": false
+          },
+          {
+            "at": 0.35,
+            "actor": "child",
+            "look": "neighbor",
+            "motion": "listen",
+            "turn": false
+          },
+          {
+            "at": 0.6,
+            "actor": "mother",
+            "look": "neighbor",
+            "motion": "listen",
+            "turn": false
+          },
+          {
+            "at": 0.8,
+            "actor": "neighbor",
+            "look": "child",
+            "motion": "listen",
+            "turn": true
+          },
+          {
+            "at": 1.3,
+            "actor": "child",
+            "look": "neighbor",
+            "turn": true
+          },
+          {
+            "at": 1.5,
+            "actor": "mother",
+            "look": "neighbor",
+            "turn": true
+          },
+          {
+            "at": 1.7,
+            "actor": "neighbor",
+            "motion": "greet",
+            "camera": "neighbor",
+            "emotion": "happy"
+          },
+          {
+            "at": 2.5,
+            "line": true
+          },
+          {
+            "at": 3.3,
+            "actor": "neighbor",
+            "motion": "listen",
+            "emotion": "calm"
+          }
+        ]
+      }
     },
     {
       "id": "mother-hello",
@@ -62,8 +212,43 @@
       "text": "Hello!",
       "kind": "dialogue",
       "shot": "mother",
-      "gesture": "wave",
-      "english": true
+      "english": true,
+      "staging": {
+        "minimumSeconds": 2.3,
+        "waitingText": "Ona salomga javob bermoqda…",
+        "autoAdvance": true,
+        "cues": [
+          {
+            "at": 0,
+            "actor": "mother",
+            "look": "neighbor",
+            "motion": "listen",
+            "camera": "conversation",
+            "turn": false
+          },
+          {
+            "at": 0.4,
+            "actor": "mother",
+            "look": "neighbor",
+            "motion": "talk",
+            "camera": "mother",
+            "turn": true,
+            "line": true
+          },
+          {
+            "at": 0.6,
+            "actor": "neighbor",
+            "look": "mother",
+            "motion": "listen",
+            "turn": false
+          },
+          {
+            "at": 1.7,
+            "actor": "mother",
+            "motion": "listen"
+          }
+        ]
+      }
     },
     {
       "id": "hello-meaning",
@@ -73,7 +258,60 @@
       "kind": "dialogue",
       "word": "Hello",
       "translation": "Salom",
-      "shot": "mother"
+      "shot": "mother",
+      "staging": {
+        "minimumSeconds": 5.5,
+        "waitingText": "Ona bolaga yuzlanmoqda…",
+        "autoAdvance": false,
+        "cues": [
+          {
+            "at": 0,
+            "actor": "mother",
+            "look": "child",
+            "motion": "listen",
+            "camera": "conversation",
+            "turn": false
+          },
+          {
+            "at": 0.35,
+            "actor": "child",
+            "look": "mother",
+            "motion": "listen",
+            "turn": false
+          },
+          {
+            "at": 0.7,
+            "actor": "mother",
+            "look": "child",
+            "turn": true
+          },
+          {
+            "at": 0.9,
+            "actor": "child",
+            "look": "mother",
+            "turn": true
+          },
+          {
+            "at": 1.1,
+            "actor": "mother",
+            "motion": "talk",
+            "camera": "mother",
+            "line": true
+          },
+          {
+            "at": 1.2,
+            "actor": "neighbor",
+            "look": "child",
+            "motion": "listen",
+            "turn": true
+          },
+          {
+            "at": 5,
+            "actor": "mother",
+            "motion": "listen"
+          }
+        ]
+      }
     },
     {
       "id": "hello-sample",
@@ -84,7 +322,33 @@
       "word": "Hello",
       "translation": "Salom",
       "english": true,
-      "shot": "mother"
+      "shot": "mother",
+      "staging": {
+        "minimumSeconds": 2.6,
+        "waitingText": "Onangni kuzat va tingla…",
+        "autoAdvance": false,
+        "cues": [
+          {
+            "at": 0,
+            "actor": "mother",
+            "look": "child",
+            "motion": "listen",
+            "camera": "mother",
+            "turn": true
+          },
+          {
+            "at": 0.4,
+            "actor": "mother",
+            "motion": "talk",
+            "line": true
+          },
+          {
+            "at": 1.4,
+            "actor": "mother",
+            "motion": "listen"
+          }
+        ]
+      }
     },
     {
       "id": "hello-guided",
@@ -95,7 +359,43 @@
       "options": ["Hello", "Goodbye"],
       "correct": ["Hello"],
       "hint": "Biz hozir uchrashdik. Salom beramiz: Hello.",
-      "shot": "conversation"
+      "shot": "conversation",
+      "staging": {
+        "minimumSeconds": 1.5,
+        "waitingText": "Endi bolaning navbati…",
+        "autoAdvance": false,
+        "cues": [
+          {
+            "at": 0,
+            "actor": "mother",
+            "look": "child",
+            "motion": "listen",
+            "camera": "conversation",
+            "turn": true
+          },
+          {
+            "at": 0.3,
+            "actor": "child",
+            "look": "neighbor",
+            "motion": "listen",
+            "turn": false
+          },
+          {
+            "at": 0.6,
+            "actor": "child",
+            "look": "neighbor",
+            "turn": true,
+            "line": true
+          },
+          {
+            "at": 0.8,
+            "actor": "neighbor",
+            "look": "child",
+            "motion": "listen",
+            "turn": true
+          }
+        ]
+      }
     },
     {
       "id": "child-hello",
@@ -104,8 +404,46 @@
       "text": "Hello!",
       "kind": "dialogue",
       "english": true,
-      "gesture": "wave",
-      "shot": "child"
+      "shot": "child",
+      "staging": {
+        "minimumSeconds": 6.4,
+        "waitingText": "Bola qo‘shniga yuzlanmoqda…",
+        "autoAdvance": true,
+        "cues": [
+          {
+            "at": 0,
+            "actor": "child",
+            "look": "neighbor",
+            "motion": "listen",
+            "camera": "conversation",
+            "turn": false,
+            "emotion": "unsure"
+          },
+          {
+            "at": 0.5,
+            "actor": "child",
+            "look": "neighbor",
+            "turn": true
+          },
+          {
+            "at": 0.8,
+            "actor": "child",
+            "motion": "greet",
+            "camera": "child",
+            "emotion": "happy"
+          },
+          {
+            "at": 1.4,
+            "line": true
+          },
+          {
+            "at": 5.9,
+            "actor": "child",
+            "motion": "listen",
+            "emotion": "calm"
+          }
+        ]
+      }
     },
     {
       "id": "neighbor-response",
@@ -114,7 +452,34 @@
       "text": "Hello!",
       "kind": "dialogue",
       "english": true,
-      "shot": "neighbor"
+      "shot": "neighbor",
+      "staging": {
+        "minimumSeconds": 2.4,
+        "waitingText": "Qo‘shni bolaga javob bermoqda…",
+        "autoAdvance": true,
+        "cues": [
+          {
+            "at": 0,
+            "actor": "neighbor",
+            "look": "child",
+            "motion": "listen",
+            "camera": "neighbor",
+            "turn": true,
+            "emotion": "happy"
+          },
+          {
+            "at": 0.3,
+            "actor": "neighbor",
+            "motion": "talk",
+            "line": true
+          },
+          {
+            "at": 1.3,
+            "actor": "neighbor",
+            "motion": "listen"
+          }
+        ]
+      }
     },
     {
       "id": "well-done",
@@ -122,7 +487,45 @@
       "speaker": "Ona",
       "text": "Mana, birinchi inglizcha suhbating! Endi kichik sayr qilamiz.",
       "kind": "dialogue",
-      "shot": "mother"
+      "shot": "mother",
+      "staging": {
+        "minimumSeconds": 3.6,
+        "waitingText": "Ona o‘g‘lidan mamnun…",
+        "autoAdvance": false,
+        "cues": [
+          {
+            "at": 0,
+            "actor": "mother",
+            "look": "child",
+            "motion": "listen",
+            "camera": "conversation",
+            "turn": false,
+            "emotion": "happy"
+          },
+          {
+            "at": 0.4,
+            "actor": "child",
+            "look": "mother",
+            "motion": "listen",
+            "turn": false,
+            "emotion": "happy"
+          },
+          {
+            "at": 0.7,
+            "actor": "mother",
+            "look": "child",
+            "motion": "talk",
+            "camera": "mother",
+            "turn": true,
+            "line": true
+          },
+          {
+            "at": 2.8,
+            "actor": "mother",
+            "motion": "listen"
+          }
+        ]
+      }
     },
     {
       "id": "walk-again",

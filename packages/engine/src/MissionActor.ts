@@ -3,11 +3,13 @@ import { clone } from 'three/addons/utils/SkeletonUtils.js';
 import type { MissionActorId } from '@gamenglish/contracts';
 import { ActorMotion } from './ActorMotion';
 import { ActorFace } from './ActorFace';
+import { ActorGaze } from './ActorGaze';
 export class MissionActor {
   readonly root = new Group();
   readonly face: ActorFace;
   readonly height: number;
   private motion: ActorMotion;
+  private gaze: ActorGaze;
   private waveRequested = false;
   private heading = Math.PI;
   moving = false;
@@ -40,6 +42,7 @@ export class MissionActor {
       }
       if (object instanceof SkinnedMesh) object.frustumCulled = false;
     });
+    this.gaze = new ActorGaze(this.root);
     this.face = new ActorFace(model);
     this.motion = new ActorMotion(model, clips);
   }
@@ -49,6 +52,14 @@ export class MissionActor {
   }
   faceToward(x: number, z: number) {
     this.heading = Math.atan2(x - this.root.position.x, z - this.root.position.z);
+  }
+  lookAway() {
+    this.gaze.clear();
+    this.faceToward(this.root.position.x + 4, this.root.position.z);
+  }
+  lookAtActor(actor: MissionActor, turn = true) {
+    this.gaze.lookAt(actor.root.position.clone().add(new Vector3(0, actor.height * 0.84, 0)));
+    if (turn) this.faceToward(actor.root.position.x, actor.root.position.z);
   }
   update(delta: number, _time: number, reducedMotion: boolean) {
     const difference = Math.atan2(
@@ -67,6 +78,7 @@ export class MissionActor {
             : 'idle',
       reducedMotion,
     );
+    this.gaze.update(delta);
     this.face.update(delta, reducedMotion);
   }
   dispose() {

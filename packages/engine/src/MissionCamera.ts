@@ -7,7 +7,7 @@ export class MissionCamera {
   private position = new Vector3(15, 3.6, -8);
   private aim = new Vector3();
   private offset = new Vector3();
-  private up = new Vector3(0, 1, 0);
+  private previousShot?: MissionShot;
   constructor() {
     this.camera.position.copy(this.position);
   }
@@ -32,12 +32,16 @@ export class MissionCamera {
         .add(new Vector3(0, 1.05, 0));
       this.position.copy(this.aim).add(new Vector3(0.6, 1.2, portrait ? 6.6 : 4.8));
     } else {
-      this.offset
-        .set(0.6, 0.1, portrait ? 2.9 : 2.5)
-        .applyAxisAngle(this.up, subject.root.rotation.y);
+      const distance = portrait ? 2.9 : 2.5;
+      this.offset.set(
+        Math.sin(subject.root.rotation.y) * distance,
+        0.1,
+        Math.abs(Math.cos(subject.root.rotation.y) * distance) + 0.95,
+      );
       this.position.copy(this.aim).add(this.offset);
     }
-    const factor = instant ? 1 : 1 - Math.exp(-delta * 3);
+    const factor = instant || shot !== this.previousShot ? 1 : 1 - Math.exp(-delta * 3);
+    this.previousShot = shot;
     this.camera.position.lerp(this.position, factor);
     this.look.lerp(this.aim, factor);
     this.camera.lookAt(this.look);
