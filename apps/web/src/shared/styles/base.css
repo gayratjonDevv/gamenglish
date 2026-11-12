@@ -1,0 +1,51 @@
+@import './tokens.css';
+:root {
+  font-family: var(--font-body);
+  color: var(--color-text-primary);
+  background: var(--color-page);
+  font-synthesis: none;
+  font-size: var(--size-15);
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+button,
+select {
+  font: inherit;
+}
+
+button,
+a,
+summary,
+select {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+button:focus-visible,
+summary:focus-visible,
+a:focus-visible,
+select:focus-visible {
+  outline: var(--size-3) solid var(--color-focus);
+  outline-offset: var(--size-4);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto;
+    transition: none;
+  }
+}

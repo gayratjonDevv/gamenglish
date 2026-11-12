@@ -1,0 +1,57 @@
+.game-view {
+  position: fixed;
+  inset: 0;
+  z-index: var(--layer-world);
+  background: var(--color-world-background);
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.game-view.active {
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.game-view canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.close-scene {
+  position: absolute;
+  top: var(--size-20);
+  right: var(--size-20);
+}
+
+.game-help {
+  position: absolute;
+  top: var(--size-15);
+  left: var(--size-20);
+  background: var(--color-surface-raised);
+  padding: var(--size-10);
+  border-radius: var(--size-8);
+  font-size: var(--size-12);
+}
+
+.touch-pad {
+  position: absolute;
+  bottom: var(--size-24);
+  left: var(--size-24);
+  display: flex;
+  gap: var(--size-8);
+  touch-action: none;
+}
+
+.touch-pad button {
+  width: var(--size-48);
+  height: var(--size-48);
+  touch-action: none;
+}
+
+@media (max-width: 700px) {
+  .game-help {
+    max-width: 60%;
+    font-size: var(--size-12);
+  }
+}

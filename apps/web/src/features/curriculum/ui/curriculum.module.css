@@ -1,0 +1,147 @@
+.stage-tabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--size-10);
+  margin: var(--size-23) 0;
+}
+
+.stage-tabs button {
+  text-align: left;
+  border: var(--size-1) solid var(--color-border);
+  border-radius: var(--size-12);
+  background: transparent;
+  padding: var(--size-17) var(--size-16);
+}
+
+.stage-tabs .selected {
+  background: var(--color-brand);
+  color: var(--color-on-brand);
+  border-color: var(--color-brand);
+}
+
+.stage-number {
+  display: block;
+  opacity: 0.6;
+  font-size: var(--size-12);
+  margin-bottom: var(--size-14);
+}
+
+.stage-tabs strong {
+  font-family: var(--font-heading);
+  font-size: var(--size-17);
+  display: block;
+}
+
+.stage-tabs small {
+  display: block;
+  margin-top: var(--size-5);
+  font-size: var(--size-12);
+  opacity: 0.7;
+}
+
+.path-caption {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--size-12);
+  color: var(--color-text-secondary);
+  padding: 0 0 var(--size-15);
+}
+
+.modules details {
+  border-top: var(--size-1) solid var(--color-border);
+}
+
+.modules details:last-child {
+  border-bottom: var(--size-1) solid var(--color-border);
+}
+
+.modules summary {
+  display: flex;
+  align-items: center;
+  padding: var(--size-20) 0;
+  gap: var(--size-19);
+}
+
+.module-index {
+  font-size: var(--size-12);
+  color: var(--color-text-muted);
+  min-width: var(--size-20);
+}
+
+.modules summary strong {
+  display: block;
+  font-size: var(--size-14);
+  font-weight: 500;
+}
+
+.modules summary small {
+  display: block;
+  font-size: var(--size-12);
+  color: var(--color-text-muted);
+  margin-top: var(--size-5);
+}
+
+.expand {
+  margin-left: auto;
+  font-size: var(--size-20);
+  color: var(--color-text-muted);
+}
+
+details[open] .expand {
+  transform: rotate(45deg);
+}
+
+.module-body {
+  padding: 0 0 var(--size-22) var(--size-40);
+  font-size: var(--size-12);
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.module-body p {
+  margin: 0 0 var(--size-12);
+}
+
+.prerequisite {
+  font-size: var(--size-12);
+}
+
+.module-body ol {
+  padding: 0;
+  list-style: none;
+}
+
+.module-body li {
+  display: flex;
+  gap: var(--size-12);
+  padding: var(--size-10) 0;
+  border-top: var(--size-1) dashed var(--color-border);
+}
+
+.module-body li > span {
+  font-size: var(--size-12);
+  padding-top: var(--size-3);
+  color: var(--color-text-muted);
+}
+
+.module-body li strong {
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+.module-body li small {
+  display: block;
+  margin-top: var(--size-3);
+  font-size: var(--size-12);
+}
+
+.outline-note {
+  font-size: var(--size-12);
+  padding-top: var(--size-8);
+}
+
+@media (max-width: 700px) {
+  .stage-tabs button {
+    padding: var(--size-14) var(--size-12);
+  }
+}

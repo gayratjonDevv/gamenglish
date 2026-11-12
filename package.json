@@ -20,16 +20,23 @@
     "content:validate": "node --import tsx tools/validate-content.ts",
     "content:stress": "node --import tsx tools/stress-content.ts",
     "audio:inventory": "node --import tsx tools/audio-inventory.ts",
-    "check": "npm run typecheck && npm run test && npm run content:validate && npm run content:stress && npm run build",
+    "check": "npm run format:check && npm run architecture:check && npm run typecheck && npm run test && npm run content:validate && npm run content:stress && npm run build",
     "asset:register": "node --import tsx tools/register-asset.ts",
-    "content:release-check": "node --import tsx tools/validate-content.ts --release"
+    "content:release-check": "node --import tsx tools/validate-content.ts --release",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "architecture:check": "node --import tsx tools/check-architecture.ts",
+    "feature:create": "node --import tsx tools/create-feature.ts"
   },
   "devDependencies": {
-    "typescript": "7.0.2",
-    "vite": "8.3.8",
-    "vitest": "5.1.0",
-    "tsx": "4.20.6",
     "@types/node": "24.10.0",
-    "fake-indexeddb": "6.2.8"
+    "fake-indexeddb": "6.2.8",
+    "postcss": "8.5.6",
+    "prettier": "3.6.2",
+    "tsx": "4.20.6",
+    "typescript": "7.0.2",
+    "typescript-ast": "npm:typescript@5.9.3",
+    "vite": "8.3.8",
+    "vitest": "5.1.0"
   }
 }

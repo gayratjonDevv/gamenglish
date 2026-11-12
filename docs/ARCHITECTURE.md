@@ -56,3 +56,7 @@ Bitta narration kanali. Yangi cue oldingisini bekor qiladi; har bir pending prom
 ## Saqlash va sync
 
 Evidence ID idempotency key. Attempts, mastery va outbox bir IndexedDB transactionda yoziladi. Out-of-order yoki texnik xato masteryga soxta yutuq bermaydi. Server sync adapteri hozir yo‘q; outbox borligi cloud backup degani emas. Brauzer ma’lumoti tozalansa progress yo‘qolishi mumkin.
+
+## Frontend qatlamlari
+
+app → feature public API → shared/ui. Featurelar bir-birini import qilmaydi; engine/learning contracts orqali ajratilgan. Batafsil majburiy qoidalar: [CLEAN_CODE.md](CLEAN_CODE.md), [DESIGN_SYSTEM.md](DESIGN_SYSTEM.md). UI kodi endi bitta katta App/CSS faylida emas.

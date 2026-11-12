@@ -10,3 +10,13 @@
 - Preserve resource ownership: scene instances release handles; asset cache disposes shared geometry/materials/textures once.
 - Run npm run check. Keep behavior tests for resource lifecycle, gates, persistence, audio cancellation and content addressing.
 - Never claim a synthetic scalability test is a 10,000-level game or a real-device performance result.
+
+## Mandatory frontend and design policy
+
+- Read docs/CLEAN_CODE.md and docs/DESIGN_SYSTEM.md before frontend changes.
+- Limits: TSX/hooks 180 lines, other TypeScript 350, functions 120, CSS 250. Count formatted physical lines. Never minify or split arbitrarily to evade limits. JSON course data/lockfiles/docs are not executable components.
+- One exported UI component per TSX file. app composes features through public index files; features do not import one another. shared must not depend on app/features/game infrastructure.
+- Reuse shared/ui controls and existing feature blocks. Raw button/select outside their shared primitives and inline style are prohibited. Do not make Button2/CustomCard copies.
+- Feature/component styles use CSS Modules. Design values belong to shared/styles/tokens.css. No literal colors/px, !important, per-feature token definitions or external style/font imports. Documented media query breakpoints are the exception.
+- Use npm run feature:create -- --name kebab-case for the approved feature skeleton. Do not overwrite an existing feature.
+- Run npm run format and npm run check. CI enforces format, architecture/design policies, domain tests and content checks. Semantic reuse, visual quality, accessibility and behavior still need review.

@@ -222,3 +222,10 @@ export const curriculumSchema = z.object({
   ),
 });
 export type Curriculum = z.infer<typeof curriculumSchema>;
+
+export type GameContent = {
+  assets: AssetCatalog;
+  audio: AudioCatalog;
+  curriculum: Curriculum;
+  scene: SceneDefinition;
+};

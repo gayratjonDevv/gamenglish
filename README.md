@@ -20,7 +20,7 @@ npm run check
 npm run audio:inventory
 ```
 
-`check`: TypeScript, behavior tests, content references, 10 001 synthetic level addressing test, production build. `npm run content:release-check` hozir ataylab xato beradi: yozuv/model va tasdiqlangan level yetishmaydi.
+`check`: format, architecture/design policies, TypeScript, behavior tests, content references, 10 001 synthetic level addressing test, production build. `npm run content:release-check` hozir ataylab xato beradi: yozuv/model va tasdiqlangan level yetishmaydi.
 
 ## Aniq mahkamlangan texnologiyalar
 
@@ -34,7 +34,7 @@ r187 tanlovi — tekshirilgan hozirgi stable relizni pin qilish qarori, “barch
 ## Tuzilma
 
 ```text
-apps/web/                  React ilova, sahna konteyneri, development asset server
+apps/web/                  app + isolated features + shared UI/design tokens
   public/content/v1/       Kichik metadata: index, packs, scenes, audio, vocabulary, curriculum
 packages/contracts/        Zod schema va umumiy TypeScript turlari
 packages/engine/           Content/asset/audio servislar; alohida lazy Three.js runtime
@@ -75,9 +75,21 @@ docs/                      Arxitektura va ishlab chiqarish shartnomalari
 ## Hujjatlar
 
 - [Arxitektura](docs/ARCHITECTURE.md)
+- [Clean code va frontend qoidalari](docs/CLEAN_CODE.md)
+- [Dizayn tizimi](docs/DESIGN_SYSTEM.md)
 - [Asset import va saqlash](docs/ASSETS.md)
 - [Ikki tilli ovoz](docs/AUDIO.md)
 - [Level va o‘quv kontenti](docs/CONTENT.md)
 - [Backend integratsiyasi](docs/BACKEND.md)
 - [Deployment va performance](docs/OPERATIONS.md)
 - [Qarorlar va keyingi ishlar](docs/DECISIONS.md)
+
+## Frontend sifat qoidalari
+
+App faqat composition root. Curriculum, voice va world alohida featurelar; Button/Surface/Notice/SelectField kabi shablonlar shared/ui ichida. CSS Modules va yagona tokenlar ishlatiladi. 180/350/250 qator limitlari, import chegaralari va dizayn qoidalari `npm run architecture:check` orqali CI da tekshiriladi. Uzun aynan bir xil funksiyalar aniqlanadi; mazmuniy takrorlanish reviewda tekshiriladi.
+
+```bash
+npm run feature:create -- --name inventory
+npm run format
+npm run check
+```

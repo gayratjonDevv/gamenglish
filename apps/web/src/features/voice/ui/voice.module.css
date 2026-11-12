@@ -1,0 +1,22 @@
+.voice-card blockquote {
+  font-size: var(--size-14);
+  line-height: 1.7;
+  margin: var(--size-20) 0;
+  border-left: var(--size-2) solid var(--color-accent);
+  padding-left: var(--size-14);
+  min-height: var(--size-48);
+}
+
+.voice-actions {
+  display: flex;
+  gap: var(--size-8);
+}
+
+.voice-actions button {
+  font-size: var(--size-12);
+  padding: var(--size-9) var(--size-10);
+}
+
+.voice-card {
+  min-width: 0;
+}

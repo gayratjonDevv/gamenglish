@@ -1,0 +1,121 @@
+.button {
+  border: var(--size-1) solid var(--color-border);
+  background: var(--color-surface-raised);
+  border-radius: var(--size-9);
+  padding: var(--size-11) var(--size-14);
+  color: inherit;
+  min-height: var(--size-44);
+}
+
+.sectionLabel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--size-12);
+}
+
+.sectionLabel h2 {
+  font-family: var(--font-heading);
+  font-size: var(--size-16);
+  margin: 0;
+}
+
+.sectionLabel > span {
+  color: var(--color-text-secondary);
+  font-size: var(--size-12);
+}
+
+.disclosure summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.disclosure summary::-webkit-details-marker {
+  display: none;
+}
+
+.badge {
+  font-size: var(--size-12);
+  font-weight: 700;
+  letter-spacing: var(--size-0-8);
+  padding: var(--size-6) var(--size-8);
+  border-radius: var(--size-5);
+  background: var(--color-badge-background);
+  color: var(--color-badge-text);
+}
+
+.primary {
+  background: var(--color-brand);
+  color: var(--color-surface-raised);
+  border: none;
+}
+
+.fineprint {
+  font-size: var(--size-12);
+  line-height: 1.7;
+  color: var(--color-text-muted);
+  margin: var(--size-12) 0 0;
+}
+
+.field label {
+  font-size: var(--size-12);
+  color: var(--color-text-muted);
+  display: block;
+  margin: var(--size-22) 0 var(--size-8);
+}
+
+.field select {
+  width: 100%;
+  border: var(--size-1) solid var(--color-border);
+  border-radius: var(--size-8);
+  background: var(--color-field);
+  padding: var(--size-10);
+  font-size: var(--size-12);
+  color: var(--color-text-primary);
+}
+
+.notice {
+  background: var(--color-surface-soft);
+  padding: var(--size-16);
+  border-radius: var(--size-10);
+  margin-bottom: var(--size-20);
+  font-size: var(--size-13);
+}
+
+.error {
+  background: var(--color-error-background);
+  color: var(--color-error-text);
+}
+
+.notice button {
+  margin-left: var(--size-12);
+  font-size: var(--size-12);
+}
+
+@media (max-width: 700px) {
+  .sectionLabel > span {
+    font-size: var(--size-12);
+  }
+}
+
+.surface {
+  border: var(--size-1) solid var(--color-border);
+  border-radius: var(--size-16);
+  padding: var(--size-24);
+  background: var(--color-surface);
+}
+
+.soft {
+  background: var(--color-surface-soft);
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.eyebrow {
+  display: block;
+  font-size: var(--size-12);
+  letter-spacing: var(--size-2);
+  font-weight: 700;
+}
