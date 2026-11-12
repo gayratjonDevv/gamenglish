@@ -1,8 +1,10 @@
 # GamEnglish
 
-Bola avatari va uning jonivor do‘sti orqali ingliz tilini o‘rgatuvchi Three.js o‘yini uchun boshlang‘ich arxitektura.
+Three.js va React asosidagi ingliz tili o‘yini. **Z001 — “Birinchi salom”** missiyasining interaktiv varianti: ona, bola, qo‘shni, foydalanuvchi yuborgan mahalla, suhbatlar, mashqlar va progress. Uchala rol hozir foydalanuvchi roziligi bilan bitta bola modelidan foydalanadi.
 
-**Holat: ishlaydigan loyiha asosi, tayyor to‘liq o‘yin emas.** 34 modul/204 mavzu rejasi import qilingan. 2 ta draft level shabloni bor. Tayyor GLB va ovozlar berilmagani sababli 15 asset sloti `missing`; sahna ochilishi bloklangan. Yasama 3D modellar yoki sun’iy ovoz bilan almashtirish yo‘q.
+**Tabiiy ovoz yozuvlari hali berilmagan.** Subtitrli sinov va alohida yozuvlarni ulash mavjud; robot ovoz ishlatilmaydi. Tayyor to‘liq ovozli reliz deb ko‘rsatilmaydi.
+
+[1-missiya: aktivlar, ovozlar va ishga tushirish](docs/MISSION_01.md). 204 mavzuli kurs rejasi va oldingi arxitektura modullari saqlangan, qolgan missiyalar hali amalga oshirilmagan.
 
 ## Ishga tushirish
 
@@ -10,6 +12,7 @@ Node 24 LTS va npm kerak. Node 22.12+ ham package engine minimumiga mos, lekin C
 
 ```bash
 npm ci
+npm run assets:prepare -- /absolute/path/to/uploads asset-source/m01
 npm run dev
 ```
 

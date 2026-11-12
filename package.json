@@ -12,7 +12,7 @@
   ],
   "scripts": {
     "dev": "npm run dev --workspace=@gamenglish/web --",
-    "build": "npm run typecheck && npm run build -w @gamenglish/web",
+    "build": "npm run typecheck && npm run build -w @gamenglish/web && node tools/stage-mission-assets.mjs",
     "preview": "npm run preview --workspace=@gamenglish/web --",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "test": "vitest run",
@@ -26,7 +26,9 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "architecture:check": "node --import tsx tools/check-architecture.ts",
-    "feature:create": "node --import tsx tools/create-feature.ts"
+    "feature:create": "node --import tsx tools/create-feature.ts",
+    "assets:prepare": "python tools/prepare-mission-assets.py",
+    "assets:stage": "node tools/stage-mission-assets.mjs"
   },
   "devDependencies": {
     "@types/node": "24.10.0",

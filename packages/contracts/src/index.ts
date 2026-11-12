@@ -229,3 +229,12 @@ export type GameContent = {
   curriculum: Curriculum;
   scene: SceneDefinition;
 };
+export type {
+  MissionRole,
+  MissionShot,
+  MissionStep,
+  MissionStory,
+  MissionTime,
+  MissionSceneEvent,
+  MissionActorId,
+} from './mission';

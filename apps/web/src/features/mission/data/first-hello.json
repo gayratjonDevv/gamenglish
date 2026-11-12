@@ -1,0 +1,432 @@
+{
+  "id": "Z001",
+  "revision": 1,
+  "title": "Birinchi salom",
+  "chapters": [
+    "Yangi mahalla",
+    "Hello — birinchi so‘z",
+    "Hi — do‘stona salom",
+    "Xayrlashish",
+    "Kun davomida",
+    "Mustaqil suhbat"
+  ],
+  "steps": [
+    {
+      "id": "welcome",
+      "chapter": 0,
+      "speaker": "Ona",
+      "text": "Kel, o‘g‘lim. Yangi mahallamizni bir ko‘rib chiqamiz. Bu yerda birga yangi do‘stlar topamiz.",
+      "kind": "dialogue",
+      "shot": "wide",
+      "cue": "intro"
+    },
+    {
+      "id": "worry",
+      "chapter": 0,
+      "speaker": "Bola",
+      "text": "Men inglizcha gapirishni bilmayman-ku…",
+      "kind": "dialogue",
+      "shot": "child"
+    },
+    {
+      "id": "promise",
+      "chapter": 0,
+      "speaker": "Ona",
+      "text": "Birga o‘rganamiz. Men yoningdaman. Avval qo‘shnimiz bilan salomlashamiz.",
+      "kind": "dialogue",
+      "shot": "mother"
+    },
+    {
+      "id": "walk",
+      "chapter": 0,
+      "speaker": "Vazifa",
+      "text": "Onang bilan yo‘lak bo‘ylab qo‘shning yoniga bor. WASD, yo‘nalish tugmalari yoki yerga bosish orqali yur.",
+      "kind": "travel",
+      "shot": "follow",
+      "target": [13, -14.6]
+    },
+    {
+      "id": "first-hello",
+      "chapter": 1,
+      "speaker": "Qo‘shni",
+      "text": "Hello!",
+      "kind": "dialogue",
+      "shot": "neighbor",
+      "gesture": "wave",
+      "english": true
+    },
+    {
+      "id": "mother-hello",
+      "chapter": 1,
+      "speaker": "Ona",
+      "text": "Hello!",
+      "kind": "dialogue",
+      "shot": "mother",
+      "gesture": "wave",
+      "english": true
+    },
+    {
+      "id": "hello-meaning",
+      "chapter": 1,
+      "speaker": "Ona",
+      "text": "O‘g‘lim, qo‘shnimiz bizga salom berdi. Ingliz tilida salom berish uchun Hello deymiz. Uchrashganda shu so‘zni ishlatamiz.",
+      "kind": "dialogue",
+      "word": "Hello",
+      "translation": "Salom",
+      "shot": "mother"
+    },
+    {
+      "id": "hello-sample",
+      "chapter": 1,
+      "speaker": "Ona",
+      "text": "Hello!",
+      "kind": "repeat",
+      "word": "Hello",
+      "translation": "Salom",
+      "english": true,
+      "shot": "mother"
+    },
+    {
+      "id": "hello-guided",
+      "chapter": 1,
+      "speaker": "Ona",
+      "text": "Endi qo‘shnimizga salom ber. Hello deb javob berishing mumkin.",
+      "kind": "choice",
+      "options": ["Hello", "Goodbye"],
+      "correct": ["Hello"],
+      "hint": "Biz hozir uchrashdik. Salom beramiz: Hello.",
+      "shot": "conversation"
+    },
+    {
+      "id": "child-hello",
+      "chapter": 1,
+      "speaker": "Bola",
+      "text": "Hello!",
+      "kind": "dialogue",
+      "english": true,
+      "gesture": "wave",
+      "shot": "child"
+    },
+    {
+      "id": "neighbor-response",
+      "chapter": 1,
+      "speaker": "Qo‘shni",
+      "text": "Hello!",
+      "kind": "dialogue",
+      "english": true,
+      "shot": "neighbor"
+    },
+    {
+      "id": "well-done",
+      "chapter": 1,
+      "speaker": "Ona",
+      "text": "Mana, birinchi inglizcha suhbating! Endi kichik sayr qilamiz.",
+      "kind": "dialogue",
+      "shot": "mother"
+    },
+    {
+      "id": "walk-again",
+      "chapter": 1,
+      "speaker": "Vazifa",
+      "text": "Onang bilan keyingi uchrashuv joyiga yur.",
+      "kind": "travel",
+      "shot": "follow",
+      "target": [18, -14.6]
+    },
+    {
+      "id": "hi",
+      "chapter": 2,
+      "speaker": "Qo‘shni",
+      "text": "Hi!",
+      "kind": "dialogue",
+      "word": "Hi",
+      "translation": "Salom",
+      "english": true,
+      "gesture": "wave",
+      "shot": "neighbor"
+    },
+    {
+      "id": "hi-meaning",
+      "chapter": 2,
+      "speaker": "Ona",
+      "text": "Hi ham salom degani. Bu qisqa, do‘stona salom. Hello eshitsang Hi, Hi eshitsang Hello deb ham javob berishing mumkin.",
+      "kind": "dialogue",
+      "shot": "mother"
+    },
+    {
+      "id": "hi-sample",
+      "chapter": 2,
+      "speaker": "Ona",
+      "text": "Hi!",
+      "kind": "repeat",
+      "word": "Hi",
+      "translation": "Do‘stona salom",
+      "english": true,
+      "shot": "mother"
+    },
+    {
+      "id": "hi-response",
+      "chapter": 2,
+      "speaker": "Ona",
+      "text": "Qo‘shnimiz Hi dedi. Qanday javob berasan?",
+      "kind": "choice",
+      "options": ["Goodbye", "Hi", "Hello"],
+      "correct": ["Hi", "Hello"],
+      "hint": "Hello ham, Hi ham salom degani. Ikkalasi ham mos.",
+      "shot": "conversation"
+    },
+    {
+      "id": "independent-arrival",
+      "chapter": 2,
+      "speaker": "Vazifa",
+      "text": "Qo‘shning yana yoningga keldi. O‘zing birinchi bo‘lib salomlash.",
+      "kind": "choice",
+      "options": ["Goodbye", "Hello", "Hi"],
+      "correct": ["Hello", "Hi"],
+      "skill": "greet",
+      "hint": "Uchrashganda salomlashamiz: Hello yoki Hi.",
+      "shot": "conversation"
+    },
+    {
+      "id": "leaving",
+      "chapter": 3,
+      "speaker": "Qo‘shni",
+      "text": "Goodbye!",
+      "kind": "dialogue",
+      "english": true,
+      "gesture": "wave",
+      "cue": "leave",
+      "shot": "neighbor"
+    },
+    {
+      "id": "goodbye-meaning",
+      "chapter": 3,
+      "speaker": "Ona",
+      "text": "Endi qo‘shnimiz ketyapti. Goodbye — xayr degani. Uchrashganda Hello yoki Hi, xayrlashganda Goodbye deymiz.",
+      "kind": "dialogue",
+      "word": "Goodbye",
+      "translation": "Xayr",
+      "shot": "mother"
+    },
+    {
+      "id": "goodbye-sample",
+      "chapter": 3,
+      "speaker": "Ona",
+      "text": "Goodbye!",
+      "kind": "repeat",
+      "word": "Goodbye",
+      "translation": "Xayr",
+      "english": true,
+      "shot": "mother"
+    },
+    {
+      "id": "goodbye-check",
+      "chapter": 3,
+      "speaker": "Vazifa",
+      "text": "Qo‘shning ketyapti. U bilan xayrlash.",
+      "kind": "choice",
+      "options": ["Hi", "Goodbye", "Hello"],
+      "correct": ["Goodbye"],
+      "skill": "farewell",
+      "hint": "U hozir ketmoqda. Goodbye — xayr.",
+      "shot": "conversation"
+    },
+    {
+      "id": "see-you",
+      "chapter": 3,
+      "speaker": "Qo‘shni",
+      "text": "See you!",
+      "kind": "dialogue",
+      "english": true,
+      "word": "See you",
+      "translation": "Ko‘rishguncha",
+      "gesture": "wave",
+      "shot": "neighbor"
+    },
+    {
+      "id": "see-you-meaning",
+      "chapter": 3,
+      "speaker": "Ona",
+      "text": "See you — ko‘rishguncha degani. Xayrlashganda shunday ham aytish mumkin.",
+      "kind": "dialogue",
+      "shot": "mother"
+    },
+    {
+      "id": "see-you-sample",
+      "chapter": 3,
+      "speaker": "Bola",
+      "text": "See you!",
+      "kind": "repeat",
+      "word": "See you",
+      "translation": "Ko‘rishguncha",
+      "english": true,
+      "shot": "child"
+    },
+    {
+      "id": "morning-explain",
+      "chapter": 4,
+      "speaker": "Ona",
+      "text": "Kun vaqtiga qarab ham salomlashamiz. Ertalab Good morning — xayrli tong deymiz. Keling, kun qanday o‘zgarishini ko‘ramiz.",
+      "kind": "dialogue",
+      "shot": "wide",
+      "time": "morning"
+    },
+    {
+      "id": "morning",
+      "chapter": 4,
+      "speaker": "Ona",
+      "text": "Good morning!",
+      "kind": "repeat",
+      "word": "Good morning",
+      "translation": "Xayrli tong",
+      "english": true,
+      "time": "morning",
+      "shot": "mother"
+    },
+    {
+      "id": "afternoon-explain",
+      "chapter": 4,
+      "speaker": "Ona",
+      "text": "Tushdan keyin uchrashganda Good afternoon deymiz. Bu ham salomlashish.",
+      "kind": "dialogue",
+      "time": "afternoon",
+      "shot": "wide"
+    },
+    {
+      "id": "afternoon",
+      "chapter": 4,
+      "speaker": "Ona",
+      "text": "Good afternoon!",
+      "kind": "repeat",
+      "word": "Good afternoon",
+      "translation": "Xayrli kun · tushdan keyin",
+      "english": true,
+      "time": "afternoon",
+      "shot": "mother"
+    },
+    {
+      "id": "evening-explain",
+      "chapter": 4,
+      "speaker": "Ona",
+      "text": "Kechqurun uchrashganda Good evening — xayrli kech deymiz.",
+      "kind": "dialogue",
+      "time": "evening",
+      "shot": "wide"
+    },
+    {
+      "id": "evening",
+      "chapter": 4,
+      "speaker": "Ona",
+      "text": "Good evening!",
+      "kind": "repeat",
+      "word": "Good evening",
+      "translation": "Xayrli kech · uchrashganda",
+      "english": true,
+      "time": "evening",
+      "shot": "mother"
+    },
+    {
+      "id": "night-explain",
+      "chapter": 4,
+      "speaker": "Ona",
+      "text": "Uxlashdan oldin yoki kechasi xayrlashganda Good night — xayrli tun deymiz. Bu uchrashish salomi emas.",
+      "kind": "dialogue",
+      "time": "night",
+      "shot": "wide"
+    },
+    {
+      "id": "night",
+      "chapter": 4,
+      "speaker": "Ona",
+      "text": "Good night!",
+      "kind": "repeat",
+      "word": "Good night",
+      "translation": "Xayrli tun · xayrlashganda",
+      "english": true,
+      "time": "night",
+      "shot": "mother"
+    },
+    {
+      "id": "evening-check",
+      "chapter": 4,
+      "speaker": "Vazifa",
+      "text": "Kechqurun qo‘shning bilan endi uchrashding. Qaysi ibora mos?",
+      "kind": "choice",
+      "options": ["Good night", "Good evening"],
+      "correct": ["Good evening"],
+      "hint": "Good evening — uchrashganda. Good night — uxlash oldidan yoki xayrlashganda.",
+      "shot": "conversation",
+      "time": "evening"
+    },
+    {
+      "id": "night-check",
+      "chapter": 4,
+      "speaker": "Vazifa",
+      "text": "Endi uxlashga ketyapsan. Onangga nima deysan?",
+      "kind": "choice",
+      "options": ["Good night", "Good morning"],
+      "correct": ["Good night"],
+      "hint": "Uxlash oldidan Good night deymiz.",
+      "shot": "mother",
+      "time": "night"
+    },
+    {
+      "id": "return-morning",
+      "chapter": 5,
+      "speaker": "Ona",
+      "text": "Sayrimizga qaytamiz. Endi o‘zing urinib ko‘r. Qiynalsang, yordam so‘rashing mumkin.",
+      "kind": "dialogue",
+      "time": "morning",
+      "shot": "wide",
+      "cue": "return"
+    },
+    {
+      "id": "final-hello",
+      "chapter": 5,
+      "speaker": "Qo‘shni",
+      "text": "Hi!",
+      "kind": "choice",
+      "english": true,
+      "options": ["Goodbye", "Hello", "Hi"],
+      "correct": ["Hello", "Hi"],
+      "skill": "respond",
+      "hint": "U salom berdi. Hello yoki Hi bilan javob ber.",
+      "shot": "neighbor",
+      "gesture": "wave"
+    },
+    {
+      "id": "final-farewell",
+      "chapter": 5,
+      "speaker": "Vazifa",
+      "text": "Qo‘shning ketish uchun qo‘l silkitdi. Xayrlash.",
+      "kind": "choice",
+      "options": ["See you", "Hi", "Goodbye"],
+      "correct": ["Goodbye", "See you"],
+      "skill": "farewell-final",
+      "hint": "Ketayotganda Goodbye yoki See you deymiz.",
+      "shot": "conversation",
+      "cue": "leave"
+    },
+    {
+      "id": "final-morning",
+      "chapter": 5,
+      "speaker": "Vazifa",
+      "text": "Ertalab yangi qo‘shning bilan uchrashding. Kun vaqtiga mos salomni tanla.",
+      "kind": "choice",
+      "options": ["Good evening", "Good morning", "Good night"],
+      "correct": ["Good morning"],
+      "skill": "morning",
+      "hint": "Ertalab: Good morning — xayrli tong.",
+      "shot": "conversation",
+      "time": "morning"
+    },
+    {
+      "id": "finish",
+      "chapter": 5,
+      "speaker": "Ona",
+      "text": "Bugun salom berishni, salomga javob qaytarishni va xayrlashishni mashq qilding. Keyingi safar ismingni aytishni o‘rganamiz.",
+      "kind": "finish",
+      "shot": "wide"
+    }
+  ]
+}

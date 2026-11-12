@@ -70,4 +70,29 @@
   --size-negative-2: -2px;
   --size-44: 44px;
   --layer-world: 10;
+  --game-ink: #223b38;
+  --game-milk: #fffdf4;
+  --game-glass: #fffdf4f2;
+  --game-shadow: 0 16px 64px #13282330;
+  --game-overlay: #102b29b8;
+  --game-mint: #c5e7c3;
+  --game-yellow: #f4d17b;
+  --game-muted: #d1dfd5;
+  --game-subtle: #ffffff20;
+  --game-scrim: #112b2ba8;
+  --game-shade: linear-gradient(90deg, #102b2bd9 0%, #102b2b70 42%, #102b2b00 78%);
+  --game-vignette: linear-gradient(
+    180deg,
+    #102b2b66 0%,
+    #102b2b00 25%,
+    #102b2b00 70%,
+    #102b2b88 100%
+  );
+  --game-modal-width: 680px;
+  --game-dialogue-width: 760px;
+  --game-intro-width: 640px;
+  --game-title-size: clamp(3rem, 5.6vw, 5.5rem);
+  --game-dialogue-bottom: 48px;
+  --game-progress-height: 3px;
+  --game-ease: 180ms ease;
 }

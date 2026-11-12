@@ -1,0 +1,107 @@
+.game {
+  position: relative;
+  width: 100%;
+  height: 100svh;
+  min-height: var(--size-340);
+  overflow: hidden;
+  background: var(--color-world-background);
+  color: var(--game-milk);
+}
+.canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+  outline: none;
+}
+.vignette {
+  position: absolute;
+  inset: 0;
+  background: var(--game-vignette);
+  pointer-events: none;
+}
+.loading {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--size-16);
+  background: var(--color-world-background);
+  text-align: center;
+  padding: var(--size-32);
+}
+.loading h2 {
+  font-size: var(--size-24);
+  margin: 0;
+}
+.loading p {
+  font-size: var(--size-14);
+  color: var(--game-muted);
+}
+.loading progress {
+  width: min(80%, var(--size-300));
+  accent-color: var(--game-mint);
+}
+.spinner {
+  width: var(--size-42);
+  height: var(--size-42);
+  border: var(--size-3) solid var(--game-subtle);
+  border-top-color: var(--game-mint);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+.touchControls {
+  position: absolute;
+  bottom: var(--size-300);
+  left: var(--size-36);
+  display: flex;
+  gap: var(--size-6);
+}
+.touchControls button {
+  width: var(--size-48);
+  color: var(--game-ink);
+  background: var(--game-glass);
+  touch-action: none;
+}
+.worldNote {
+  position: absolute;
+  bottom: var(--size-14);
+  left: var(--size-36);
+  right: var(--size-36);
+  display: flex;
+  justify-content: space-between;
+  gap: var(--size-12);
+  font-size: var(--size-10);
+  color: var(--game-muted);
+  pointer-events: none;
+}
+.storageError {
+  position: absolute;
+  right: var(--size-36);
+  top: var(--size-1320);
+  background: var(--color-error-background);
+  color: var(--color-error-text);
+  padding: var(--size-12);
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 700px) {
+  .touchControls {
+    left: var(--size-16);
+    bottom: 48%;
+  }
+  .worldNote {
+    left: var(--size-16);
+    right: var(--size-16);
+    bottom: var(--size-8);
+  }
+  .worldNote span {
+    display: none;
+  }
+}

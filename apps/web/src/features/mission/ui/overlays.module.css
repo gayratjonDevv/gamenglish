@@ -1,0 +1,197 @@
+.intro {
+  position: absolute;
+  inset: 0;
+  background: var(--game-shade);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: var(--size-96) 7% var(--size-48);
+  overflow-y: auto;
+}
+.kicker {
+  font-size: var(--size-10);
+  font-weight: 700;
+  letter-spacing: var(--size-2);
+  color: var(--game-yellow);
+}
+.intro h1 {
+  font-family: var(--font-heading);
+  font-size: var(--game-title-size);
+  font-weight: 650;
+  line-height: 1.08;
+  letter-spacing: var(--size-negative-2);
+  margin: var(--size-24) 0;
+}
+.intro h1 em {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  color: var(--game-mint);
+}
+.intro > p {
+  font-size: var(--size-16);
+  line-height: 1.7;
+  color: var(--game-muted);
+  max-width: var(--size-340);
+  margin: 0 0 var(--size-24);
+}
+.metadata {
+  display: flex;
+  gap: var(--size-16);
+  font-size: var(--size-11);
+  color: var(--game-milk);
+  margin-bottom: var(--size-24);
+  flex-wrap: wrap;
+}
+.begin {
+  background: var(--game-mint);
+  color: var(--game-ink);
+  border-color: var(--game-mint);
+  padding: var(--size-16) var(--size-24);
+  font-size: var(--size-15);
+}
+.begin span {
+  margin-left: var(--size-24);
+}
+.intro > .note {
+  font-size: var(--size-11);
+  margin-top: var(--size-16);
+  margin-bottom: 0;
+  max-width: var(--game-intro-width);
+}
+.note {
+  font-size: var(--size-12);
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+}
+.audioImport {
+  margin-top: var(--size-16);
+  font-size: var(--size-12);
+  max-width: var(--size-340);
+}
+.audioImport summary {
+  cursor: pointer;
+  color: var(--game-muted);
+}
+.audioImport p {
+  line-height: 1.6;
+}
+.audioImport input {
+  display: block;
+  margin: var(--size-16) 0;
+  max-width: 100%;
+  font-size: var(--size-12);
+}
+.scrim {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: var(--size-24);
+  background: var(--game-scrim);
+  z-index: 4;
+  overflow-y: auto;
+}
+.modal {
+  padding: var(--size-36);
+  border-radius: var(--size-24);
+  width: min(100%, var(--game-modal-width));
+  background: var(--game-milk);
+  color: var(--game-ink);
+  box-shadow: var(--game-shadow);
+  max-height: 100%;
+  overflow-y: auto;
+}
+.modal .kicker {
+  color: var(--color-text-secondary);
+}
+.modal h2 {
+  font-size: var(--size-32);
+  letter-spacing: var(--size-negative-1);
+  margin: var(--size-16) 0;
+}
+.modal > p {
+  line-height: 1.7;
+}
+.wordGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--size-10);
+  margin: var(--size-24) 0;
+}
+.wordGrid > div {
+  border: var(--size-1) solid var(--color-border);
+  border-radius: var(--size-12);
+  padding: var(--size-16);
+  display: grid;
+  gap: var(--size-8);
+}
+.wordGrid strong {
+  font-size: var(--size-20);
+}
+.wordGrid span {
+  font-size: var(--size-12);
+  color: var(--color-text-secondary);
+}
+.menuActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--size-10);
+  margin-top: var(--size-24);
+}
+.achievement {
+  margin-top: var(--size-24);
+  width: var(--size-78);
+  height: var(--size-78);
+  display: grid;
+  place-items: center;
+  background: var(--game-mint);
+  border-radius: var(--size-24);
+  font-size: var(--size-30);
+  font-weight: 800;
+}
+.nextLesson {
+  margin-top: var(--size-24);
+  border-top: var(--size-1) solid var(--color-border);
+  padding-top: var(--size-20);
+}
+.nextLesson span {
+  display: block;
+  font-size: var(--size-10);
+  letter-spacing: var(--size-2);
+  color: var(--color-text-secondary);
+}
+.nextLesson strong {
+  display: block;
+  font-size: var(--size-24);
+  margin-top: var(--size-10);
+}
+.nextLesson p {
+  font-size: var(--size-13);
+  color: var(--color-text-secondary);
+}
+@media (max-width: 700px) {
+  .intro {
+    padding: var(--size-96) var(--size-24) var(--size-48);
+  }
+  .intro h1 {
+    font-size: var(--size-48);
+    margin: var(--size-18) 0;
+  }
+  .intro > p {
+    font-size: var(--size-14);
+  }
+  .metadata {
+    gap: var(--size-12);
+    margin-bottom: var(--size-18);
+  }
+  .modal {
+    padding: var(--size-24);
+  }
+  .modal h2 {
+    font-size: var(--size-26);
+  }
+  .scrim {
+    padding: var(--size-12);
+  }
+}

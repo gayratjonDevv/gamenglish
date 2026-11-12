@@ -5,7 +5,8 @@ import { App } from '../apps/web/src/app/App';
 
 it('renders the bootstrap shell without constructing WebGL or requiring browser storage', () => {
   const html = renderToStaticMarkup(createElement(App));
-  expect(html).toContain('O‘quv xaritasi yuklanmoqda');
-  expect(html).toContain('Sahnani ochish');
-  expect(html).toContain('disabled');
+  expect(html).toContain('Modellar tayyorlanmoqda');
+  expect(html).toContain('Birinchi salom');
+  expect(html).toContain('<canvas');
+  expect(html).not.toContain('speechSynthesis');
 });

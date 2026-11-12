@@ -1,0 +1,33 @@
+filename,speaker,language,text
+welcome.mp3,Ona,uz,"Kel, o‘g‘lim. Yangi mahallamizni bir ko‘rib chiqamiz. Bu yerda birga yangi do‘stlar topamiz."
+worry.mp3,Bola,uz,Men inglizcha gapirishni bilmayman-ku…
+promise.mp3,Ona,uz,Birga o‘rganamiz. Men yoningdaman. Avval qo‘shnimiz bilan salomlashamiz.
+first-hello.mp3,Qo‘shni,en,Hello!
+mother-hello.mp3,Ona,en,Hello!
+hello-meaning.mp3,Ona,uz,"O‘g‘lim, qo‘shnimiz bizga salom berdi. Ingliz tilida salom berish uchun Hello deymiz. Uchrashganda shu so‘zni ishlatamiz."
+hello-sample.mp3,Ona,en,Hello!
+hello-guided.mp3,Ona,uz,Endi qo‘shnimizga salom ber. Hello deb javob berishing mumkin.
+child-hello.mp3,Bola,en,Hello!
+neighbor-response.mp3,Qo‘shni,en,Hello!
+well-done.mp3,Ona,uz,"Mana, birinchi inglizcha suhbating! Endi kichik sayr qilamiz."
+hi.mp3,Qo‘shni,en,Hi!
+hi-meaning.mp3,Ona,uz,"Hi ham salom degani. Bu qisqa, do‘stona salom. Hello eshitsang Hi, Hi eshitsang Hello deb ham javob berishing mumkin."
+hi-sample.mp3,Ona,en,Hi!
+hi-response.mp3,Ona,uz,Qo‘shnimiz Hi dedi. Qanday javob berasan?
+leaving.mp3,Qo‘shni,en,Goodbye!
+goodbye-meaning.mp3,Ona,uz,"Endi qo‘shnimiz ketyapti. Goodbye — xayr degani. Uchrashganda Hello yoki Hi, xayrlashganda Goodbye deymiz."
+goodbye-sample.mp3,Ona,en,Goodbye!
+see-you.mp3,Qo‘shni,en,See you!
+see-you-meaning.mp3,Ona,uz,See you — ko‘rishguncha degani. Xayrlashganda shunday ham aytish mumkin.
+see-you-sample.mp3,Bola,en,See you!
+morning-explain.mp3,Ona,uz,"Kun vaqtiga qarab ham salomlashamiz. Ertalab Good morning — xayrli tong deymiz. Keling, kun qanday o‘zgarishini ko‘ramiz."
+morning.mp3,Ona,en,Good morning!
+afternoon-explain.mp3,Ona,uz,Tushdan keyin uchrashganda Good afternoon deymiz. Bu ham salomlashish.
+afternoon.mp3,Ona,en,Good afternoon!
+evening-explain.mp3,Ona,uz,Kechqurun uchrashganda Good evening — xayrli kech deymiz.
+evening.mp3,Ona,en,Good evening!
+night-explain.mp3,Ona,uz,Uxlashdan oldin yoki kechasi xayrlashganda Good night — xayrli tun deymiz. Bu uchrashish salomi emas.
+night.mp3,Ona,en,Good night!
+return-morning.mp3,Ona,uz,"Sayrimizga qaytamiz. Endi o‘zing urinib ko‘r. Qiynalsang, yordam so‘rashing mumkin."
+final-hello.mp3,Qo‘shni,en,Hi!
+finish.mp3,Ona,uz,"Bugun salom berishni, salomga javob qaytarishni va xayrlashishni mashq qilding. Keyingi safar ismingni aytishni o‘rganamiz."
