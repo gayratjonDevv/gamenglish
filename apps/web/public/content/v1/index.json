@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "revision": "dev-001",
+  "totalLevels": 2,
+  "assetsPath": "assets.json",
+  "audioPath": "audio.json",
+  "vocabularyPath": "vocabulary.json",
+  "scenes": [
+    {
+      "id": "home",
+      "path": "scenes/home.json"
+    }
+  ],
+  "packs": [
+    {
+      "id": "zero-001",
+      "path": "packs/zero-001.json",
+      "first": 1,
+      "last": 2
+    }
+  ]
+}

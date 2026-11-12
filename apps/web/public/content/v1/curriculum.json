@@ -1,0 +1,1945 @@
+{
+  "schemaVersion": 1,
+  "status": "planning-outline",
+  "note": "204 topic outlines; not 204 playable or pedagogy-validated lessons. Beginner/A1 and Elementary/A2 are project naming conventions.",
+  "modules": [
+    {
+      "id": "Z-M01",
+      "stage": "zero",
+      "title": "Ilk muloqot va yordam so‘rash",
+      "prerequisites": "Yo‘q. Ko‘rsatmalar o‘zbekcha va namuna bilan.",
+      "objective": "Oddiy muloqotni boshlash va tushunmaganda yordam so‘rash.",
+      "topics": [
+        {
+          "id": "Z001",
+          "title": "Hello/Hi/Goodbye",
+          "example": "Hello, Ali!",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "Z002",
+          "title": "Please/Thank you/You’re welcome",
+          "example": "Thank you!",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "Z003",
+          "title": "Yes/No va javob ma’nosi",
+          "example": "Yes, please.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "Z004",
+          "title": "Sorry/Excuse me",
+          "example": "Excuse me.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "Z005",
+          "title": "I don’t understand/Again, please",
+          "example": "Again, please.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "Z006",
+          "title": "Listen/Look/Point/Stop/Go",
+          "example": "Look at the ball.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        }
+      ]
+    },
+    {
+      "id": "Z-M02",
+      "stage": "zero",
+      "title": "Tovush va alifbo poydevori",
+      "prerequisites": "Z-M01; og‘zaki yo‘l bilan parallel davom etadi.",
+      "objective": "Harf nomi bilan tovushni farqlash va ilk tovush-harf mosligini o‘rnatish.",
+      "topics": [
+        {
+          "id": "Z007",
+          "title": "Inglizcha tovushlarni eshitib ajratish",
+          "example": "Bir xil yoki turli tovushni aniqlash.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "Z008",
+          "title": "26 harf: nom, shakl va tartib",
+          "example": "A / B / C — harf nomlari.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "Z009",
+          "title": "Katta-kichik harf juftlari",
+          "example": "A–a, B–b.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "Z010",
+          "title": "Ilk harf-tovushlar: s/a/t/p/i/n guruhi",
+          "example": "s, a, t, p, i, n tovushlari.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "Z011",
+          "title": "Keyingi undoshlar va qisqa unlilar",
+          "example": "m, d, g, o, c/k, e, u kabi bosqichli to‘plam.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "Z012",
+          "title": "Birinchi va oxirgi tovushni ajratish",
+          "example": "cat so‘zining birinchi tovushi /k/.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        }
+      ]
+    },
+    {
+      "id": "Z-M03",
+      "stage": "zero",
+      "title": "So‘zni o‘qish va yozishga kirish",
+      "prerequisites": "Z-M02 dagi kerakli harf-tovushlar.",
+      "objective": "O‘rgatilgan tovushlardan sodda so‘zni o‘qish va yig‘ish.",
+      "topics": [
+        {
+          "id": "Z013",
+          "title": "Blending: tovushlarni qo‘shish",
+          "example": "/s/ /a/ /t/ → sat.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "Z014",
+          "title": "Segmenting: so‘zni tovushlarga ajratish",
+          "example": "map → /m/ /a/ /p/.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "Z015",
+          "title": "CVC so‘zlarni o‘qish",
+          "example": "cat, pen, sit, dog, cup.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "Z016",
+          "title": "CVC so‘zlarni eshitib yozish",
+          "example": "Eshitilgan map so‘zini yig‘ish.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "Z017",
+          "title": "So‘z, harf va bo‘sh joy",
+          "example": "a red pen — uchta so‘z.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "Z018",
+          "title": "Bosh harf va nuqta bilan ilk tanishuv",
+          "example": "Sam. I am Sam.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        }
+      ]
+    },
+    {
+      "id": "Z-M04",
+      "stage": "zero",
+      "title": "Rang, shakl va qarama-qarshiliklar",
+      "prerequisites": "Z-M01; so‘zlar dastlab audio va rasm bilan.",
+      "objective": "Buyumni ko‘rinishiga ko‘ra farqlash va nomlash.",
+      "topics": [
+        {
+          "id": "Z019",
+          "title": "Asosiy ranglar",
+          "example": "red, blue, yellow, green.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "Z020",
+          "title": "Qo‘shimcha ranglar",
+          "example": "black, white, orange, pink, brown, purple, grey.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "Z021",
+          "title": "Asosiy shakllar",
+          "example": "circle, square, triangle, rectangle.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "Z022",
+          "title": "Katta-kichik",
+          "example": "big / small.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "Z023",
+          "title": "Uzun-qisqa va baland-past",
+          "example": "long / short, tall / short.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "Z024",
+          "title": "Bir belgili buyum tavsifi",
+          "example": "a red ball, a small box.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        }
+      ]
+    },
+    {
+      "id": "Z-M05",
+      "stage": "zero",
+      "title": "Son va sodda miqdor",
+      "prerequisites": "Z-M01 va Z-M04 dagi buyumlar.",
+      "objective": "20 gacha miqdorni tushunish va yoshni aytishga tayyorlanish.",
+      "topics": [
+        {
+          "id": "Z025",
+          "title": "Sonlar 0–5",
+          "example": "zero, one, two, three, four, five.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "Z026",
+          "title": "Sonlar 6–10",
+          "example": "six, seven, eight, nine, ten.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "Z027",
+          "title": "Sonlar 11–15",
+          "example": "eleven … fifteen.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "Z028",
+          "title": "Sonlar 16–20",
+          "example": "sixteen … twenty.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "Z029",
+          "title": "Sonni buyum miqdoriga moslash",
+          "example": "three balls.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "Z030",
+          "title": "How many? — sodda javob",
+          "example": "How many? Two.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        }
+      ]
+    },
+    {
+      "id": "Z-M06",
+      "stage": "zero",
+      "title": "Men va tanish odamlar",
+      "prerequisites": "Z-M01 va Z-M05.",
+      "objective": "Ism, yosh va yaqin odamlar haqida tayyor sodda iboralarni ishlatish.",
+      "topics": [
+        {
+          "id": "Z031",
+          "title": "My name is… / I’m…",
+          "example": "My name is Ali.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "Z032",
+          "title": "What’s your name?",
+          "example": "What’s your name? I’m Lola.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "Z033",
+          "title": "How old are you?",
+          "example": "I’m nine.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "Z034",
+          "title": "Oila a’zolari",
+          "example": "mum, dad, sister, brother, grandma, grandpa.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "Z035",
+          "title": "This is… — tanishtirish",
+          "example": "This is my mum.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "Z036",
+          "title": "Hol-ahvol va hislar",
+          "example": "How are you? I’m happy.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        }
+      ]
+    },
+    {
+      "id": "Z-M07",
+      "stage": "zero",
+      "title": "Bola atrofidagi ilk lug‘at",
+      "prerequisites": "Z-M04–Z-M06; rasm-audio bilan mustaqil lug‘at yo‘li.",
+      "objective": "Tanish buyum, hayvon va harakatni eshitib aniqlash.",
+      "topics": [
+        {
+          "id": "Z037",
+          "title": "Maktab buyumlari",
+          "example": "book, pen, pencil, bag, ruler.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "Z038",
+          "title": "O‘yinchoqlar",
+          "example": "ball, doll, kite, robot, bike.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "Z039",
+          "title": "Uy hayvonlari",
+          "example": "cat, dog, bird, fish, rabbit.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "Z040",
+          "title": "Tana a’zolari",
+          "example": "head, eyes, ears, nose, mouth, hands.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "Z041",
+          "title": "Ilk harakatlar",
+          "example": "sit, stand, walk, run, jump, clap.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "Z042",
+          "title": "Ilk taom va ichimliklar",
+          "example": "apple, banana, bread, milk, water.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        }
+      ]
+    },
+    {
+      "id": "Z-M08",
+      "stage": "zero",
+      "title": "Poydevorni birlashtirish",
+      "prerequisites": "Z-M01–Z-M07 dagi tegishli birliklar.",
+      "objective": "O‘rgangan so‘z va iboralarni yangi rasm, ovoz va suhbatda qo‘llash.",
+      "topics": [
+        {
+          "id": "Z043",
+          "title": "O‘rgatilgan so‘zlarni rasmga bog‘lab o‘qish",
+          "example": "cat / bag / pen.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "Z044",
+          "title": "Ismni tanish va harflab yig‘ish",
+          "example": "A-L-I.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "Z045",
+          "title": "Rang va miqdorni birga tushunish",
+          "example": "two red balls.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "Z046",
+          "title": "Bir qadamli ko‘rsatmani bajarish",
+          "example": "Point to the blue bag.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "Z047",
+          "title": "Ikki navbatli ilk suhbat",
+          "example": "Hello! What’s your name?",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "Z048",
+          "title": "Zero yakuniy tekshiruvi",
+          "example": "Yangi buyumlar bilan tinglash, o‘qish va tanishtirish.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        }
+      ]
+    },
+    {
+      "id": "B-M01",
+      "stage": "beginner",
+      "title": "Shaxs va to be — tasdiq",
+      "prerequisites": "Z-M06; Z-M03 o‘qish yo‘li davom etadi.",
+      "objective": "Kim yoki nima ekanini sodda gap bilan aytish.",
+      "topics": [
+        {
+          "id": "B001",
+          "title": "Subject pronouns: I/you/he/she/it/we/they",
+          "example": "She is my friend.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B002",
+          "title": "Am/is/are — tasdiq",
+          "example": "I am ten. They are friends.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B003",
+          "title": "Qisqartmalar: I’m/you’re/he’s…",
+          "example": "We’re happy.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B004",
+          "title": "Oddiy gap tartibi: ega + fe’l + to‘ldiruvchi",
+          "example": "He is a student.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B005",
+          "title": "Mamlakat va millat",
+          "example": "I’m from Uzbekistan. I’m Uzbek.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B006",
+          "title": "Ism/yosh/yashash joyi profilini aytish",
+          "example": "I’m Ali. I’m ten. I’m from Tashkent.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        }
+      ]
+    },
+    {
+      "id": "B-M02",
+      "stage": "beginner",
+      "title": "To be — savol va inkor",
+      "prerequisites": "B-M01.",
+      "objective": "Shaxsiy ma’lumotni tekshirish va savolga javob berish.",
+      "topics": [
+        {
+          "id": "B007",
+          "title": "Am not/isn’t/aren’t",
+          "example": "She isn’t tired.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B008",
+          "title": "Am/Is/Are savollari",
+          "example": "Are you ten?",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B009",
+          "title": "To be bilan qisqa javoblar",
+          "example": "Yes, I am. No, he isn’t.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B010",
+          "title": "What/who — to be bilan",
+          "example": "Who is she? What is it?",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B011",
+          "title": "Where/how — to be bilan",
+          "example": "Where are you from?",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B012",
+          "title": "Shaxsiy ma’lumot shaklini to‘ldirish",
+          "example": "Name, age, country.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        }
+      ]
+    },
+    {
+      "id": "B-M03",
+      "stage": "beginner",
+      "title": "Ot, artikl va ko‘rsatish",
+      "prerequisites": "B-M01 va Z-M04–Z-M07.",
+      "objective": "Buyumni nomlash, birlik-ko‘plik va yaqin-uzoqlikni ifodalash.",
+      "topics": [
+        {
+          "id": "B013",
+          "title": "A/an — boshlang‘ich qo‘llanish",
+          "example": "a book, an apple.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B014",
+          "title": "Birlik/ko‘plik: -s va -es",
+          "example": "books, boxes.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B015",
+          "title": "Ko‘plik: -y va keng tarqalgan istisnolar",
+          "example": "babies, children, feet.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B016",
+          "title": "This/that",
+          "example": "This is a bag. That is a kite.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B017",
+          "title": "These/those",
+          "example": "These are pens. Those are books.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B018",
+          "title": "What’s this? / What are these?",
+          "example": "What are these? They’re shoes.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        }
+      ]
+    },
+    {
+      "id": "B-M04",
+      "stage": "beginner",
+      "title": "Egalik va oila tavsifi",
+      "prerequisites": "B-M03 va B-M02.",
+      "objective": "Buyum kimniki ekanini va oila a’zolarini tasvirlash.",
+      "topics": [
+        {
+          "id": "B019",
+          "title": "Possessive adjectives: my/your/his/her/its/our/their",
+          "example": "Their house is small.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B020",
+          "title": "Egalik ’s",
+          "example": "Ali’s bag.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B021",
+          "title": "Whose…? — egalik savoli",
+          "example": "Whose book is this?",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B022",
+          "title": "The — tanish yoki aniq buyum",
+          "example": "The red bag is Ali’s.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B023",
+          "title": "Sifat + ot va sifatning to be dan keyin kelishi",
+          "example": "a tall boy / The boy is tall.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B024",
+          "title": "Oila va tashqi ko‘rinish bo‘yicha sodda tavsif",
+          "example": "My sister is tall. Her hair is black.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        }
+      ]
+    },
+    {
+      "id": "B-M05",
+      "stage": "beginner",
+      "title": "Uy va buyum joylashuvi",
+      "prerequisites": "B-M03–B-M04.",
+      "objective": "Xona ichidagi narsalar va ularning o‘rnini tushuntirish.",
+      "topics": [
+        {
+          "id": "B025",
+          "title": "Uy, xonalar va mebel",
+          "example": "kitchen, bedroom, table, bed.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B026",
+          "title": "There is/there are — tasdiq",
+          "example": "There are two chairs.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B027",
+          "title": "There isn’t/aren’t va Is there/Are there",
+          "example": "Is there a window?",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B028",
+          "title": "In/on/under",
+          "example": "The ball is under the bed.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B029",
+          "title": "Next to/behind/in front of/between",
+          "example": "The shop is next to the park.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B030",
+          "title": "Where is/are…? — joylashuv savoli",
+          "example": "Where are my shoes?",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        }
+      ]
+    },
+    {
+      "id": "B-M06",
+      "stage": "beginner",
+      "title": "Borlik, tana va kiyim",
+      "prerequisites": "B-M04–B-M05.",
+      "objective": "Egalik, tashqi ko‘rinish va buyum mavjudligini aytish.",
+      "topics": [
+        {
+          "id": "B031",
+          "title": "Have got/has got — tasdiq",
+          "example": "She has got a bike.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B032",
+          "title": "Haven’t got/hasn’t got",
+          "example": "I haven’t got a pet.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B033",
+          "title": "Have/Has…got? va qisqa javob",
+          "example": "Has he got a dog?",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B034",
+          "title": "Have/has — egalikdagi muqobil shakl",
+          "example": "I have a bag.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B035",
+          "title": "Tana va tashqi ko‘rinish lug‘atini kengaytirish",
+          "example": "curly hair, blue eyes.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B036",
+          "title": "Kiyim va kiyingan odamni tanish",
+          "example": "The girl has got a red hat.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        }
+      ]
+    },
+    {
+      "id": "B-M07",
+      "stage": "beginner",
+      "title": "Qobiliyat, ruxsat va ko‘rsatma",
+      "prerequisites": "B-M06 va Z-M07 harakatlari.",
+      "objective": "Qila olishni aytish, sodda ruxsat va ko‘rsatmani tushunish.",
+      "topics": [
+        {
+          "id": "B037",
+          "title": "Can/can’t — qobiliyat",
+          "example": "I can swim. He can’t fly.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B038",
+          "title": "Can…? va qisqa javob",
+          "example": "Can you ride a bike?",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B039",
+          "title": "Can I…? — sodda ruxsat",
+          "example": "Can I open the window?",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B040",
+          "title": "Imperatives va don’t",
+          "example": "Open the door. Don’t run.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B041",
+          "title": "Let’s… — birgalikdagi taklif",
+          "example": "Let’s play football.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B042",
+          "title": "Please bilan iltimos va javob",
+          "example": "Pass me the pen, please. Here you are.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        }
+      ]
+    },
+    {
+      "id": "B-M08",
+      "stage": "beginner",
+      "title": "Kun tartibi — Present Simple",
+      "prerequisites": "B-M01 va B-M07 fe’llari.",
+      "objective": "Odat va kundalik ishlarni tushuntirish.",
+      "topics": [
+        {
+          "id": "B043",
+          "title": "Kundalik fe’llar va kun qismlari",
+          "example": "get up, have breakfast, go to school.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B044",
+          "title": "Present Simple: I/you/we/they",
+          "example": "I play after school.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B045",
+          "title": "Present Simple: he/she/it va -s/-es",
+          "example": "-y → -ies: She studies.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B046",
+          "title": "Don’t/doesn’t",
+          "example": "He doesn’t play tennis.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B047",
+          "title": "Do/does savollari va qisqa javoblar",
+          "example": "Does she read? Yes, she does.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B048",
+          "title": "What/where/when — do/does bilan",
+          "example": "When do you go to school?",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        }
+      ]
+    },
+    {
+      "id": "B-M09",
+      "stage": "beginner",
+      "title": "Vaqt, odat va yoqtirish",
+      "prerequisites": "B-M08 va Z-M05.",
+      "objective": "Jadval, vaqt va yoqtirish haqida suhbatlashish.",
+      "topics": [
+        {
+          "id": "B049",
+          "title": "Sonlar 21–100",
+          "example": "twenty-one, forty, one hundred.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B050",
+          "title": "Soat: o’clock/half past/quarter",
+          "example": "It’s half past seven.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B051",
+          "title": "Hafta kunlari va at/on/in — vaqt",
+          "example": "on Monday, at seven, in the morning.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B052",
+          "title": "Always/usually/sometimes/never",
+          "example": "I usually walk to school.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B053",
+          "title": "Like/love/don’t like + ot yoki -ing",
+          "example": "I like apples. I like swimming.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B054",
+          "title": "Sport/hobbi/maktab fanlari va favourite",
+          "example": "My favourite subject is art.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        }
+      ]
+    },
+    {
+      "id": "B-M10",
+      "stage": "beginner",
+      "title": "Hozirgi harakat — Present Continuous",
+      "prerequisites": "B-M08; B-M06 kiyim.",
+      "objective": "Ayni paytdagi voqeani va odatni farqlash.",
+      "topics": [
+        {
+          "id": "B055",
+          "title": "Am/is/are + -ing",
+          "example": "She is reading.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B056",
+          "title": "-ing yozilishining asosiy o‘zgarishlari",
+          "example": "make → making; run → running.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B057",
+          "title": "Present Continuous inkor/savol/qisqa javob",
+          "example": "Are they playing? No, they aren’t.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B058",
+          "title": "Hozirgi harakat va odat farqi",
+          "example": "I walk daily. I’m running now.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B059",
+          "title": "Kiyimni va joriy harakatni tasvirlash",
+          "example": "He is wearing a blue shirt.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B060",
+          "title": "Ob-havo va fasllar",
+          "example": "It’s sunny. It’s raining.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        }
+      ]
+    },
+    {
+      "id": "B-M11",
+      "stage": "beginner",
+      "title": "Ovqat va kundalik xizmat",
+      "prerequisites": "B-M03, B-M08 va B-M09.",
+      "objective": "Sodda xarid va buyurtmani bajarish.",
+      "topics": [
+        {
+          "id": "B061",
+          "title": "Taom/ichimlik va ovqatlanish vaqtlari",
+          "example": "breakfast, lunch, dinner.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B062",
+          "title": "Sanash mumkin/mumkin bo‘lmagan otlarga kirish",
+          "example": "an apple / some water.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B063",
+          "title": "Some/any — boshlang‘ich bor-yo‘qlik",
+          "example": "There’s some milk. Is there any bread?",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B064",
+          "title": "How much…? — narx",
+          "example": "How much is this book?",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B065",
+          "title": "I’d like… / Can I have…?",
+          "example": "I’d like some water, please.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B066",
+          "title": "Xarid dialogi va sodda e’lonni o‘qish",
+          "example": "Two apples, please. Here you are.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        }
+      ]
+    },
+    {
+      "id": "B-M12",
+      "stage": "beginner",
+      "title": "A1 ko‘nikmalarini birlashtirish",
+      "prerequisites": "B-M01–B-M11; phonics parallel reyestri.",
+      "objective": "Tanish mavzularda qisqa mustaqil muloqot, o‘qish va yozish.",
+      "topics": [
+        {
+          "id": "B067",
+          "title": "And/but/because — sodda bog‘lash",
+          "example": "I like it because it’s funny.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B068",
+          "title": "Object pronouns: me/you/him/her/it/us/them",
+          "example": "Please help me.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B069",
+          "title": "Katta harf/nuqta/savol belgisi/apostrof",
+          "example": "I’m Ali. Are you ready?",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B070",
+          "title": "Qisqa xabar va sodda paragraf",
+          "example": "Do‘stga o‘zi va kun tartibi haqida yozish.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B071",
+          "title": "Tinglab detal olish va sodda matnni tushunish",
+          "example": "Jadvaldan kim, qayer, qachonni topish.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "B072",
+          "title": "A1 yakuniy amaliy tekshiruv",
+          "example": "Tanishuv + xona + jadval + xarid: yangi vaziyatda.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        }
+      ]
+    },
+    {
+      "id": "E-M01",
+      "stage": "elementary",
+      "title": "Kengaygan kundalik muloqot",
+      "prerequisites": "B-M12 va zarur A1 ko‘nikmalari.",
+      "objective": "Oldingi bilim bilan uzoqroq kundalik suhbat olib borish.",
+      "topics": [
+        {
+          "id": "E001",
+          "title": "A1 diagnostikasi va bo‘shliqlarni to‘ldirish",
+          "example": "To be / do / can xatolarini ajratish.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E002",
+          "title": "Savol so‘zlari: why/which/how often",
+          "example": "Which bag is yours?",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E003",
+          "title": "Possessive pronouns: mine/yours/his/hers/ours/theirs",
+          "example": "This bag is mine.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E004",
+          "title": "Reflexive pronouns — sodda vaziyatlar",
+          "example": "I made it myself.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E005",
+          "title": "Something/anything/nothing/someone…",
+          "example": "Is there anything in the box?",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E006",
+          "title": "Tushunishni tekshirish va qayta so‘rash",
+          "example": "Do you mean Tuesday? Could you repeat that?",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        }
+      ]
+    },
+    {
+      "id": "E-M02",
+      "stage": "elementary",
+      "title": "Miqdor va ovqatni chuqurlashtirish",
+      "prerequisites": "B-M11 va E-M01.",
+      "objective": "Miqdor, yetarlilik va taom tayyorlashni tushuntirish.",
+      "topics": [
+        {
+          "id": "E007",
+          "title": "Countable/uncountable: vaziyatga bog‘liq qo‘llanish",
+          "example": "an egg / some rice.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E008",
+          "title": "Much/many/a lot of",
+          "example": "How much water? How many eggs?",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E009",
+          "title": "A few/a little/few/little",
+          "example": "We have a little milk.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E010",
+          "title": "A bottle of/a piece of/a kilo of",
+          "example": "Two bottles of water.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E011",
+          "title": "Enough/not enough/too much/too many",
+          "example": "There isn’t enough bread.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E012",
+          "title": "Retsept, miqdor va first/then/finally",
+          "example": "First, cut the fruit.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        }
+      ]
+    },
+    {
+      "id": "E-M03",
+      "stage": "elementary",
+      "title": "Taqqoslash va tavsif",
+      "prerequisites": "B-M04 va E-M02.",
+      "objective": "Buyum, odam va xizmatlarni sodda mezonlar bo‘yicha taqqoslash.",
+      "topics": [
+        {
+          "id": "E013",
+          "title": "Comparative: -er va more",
+          "example": "This bike is faster.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E014",
+          "title": "Superlative: -est va most",
+          "example": "It’s the cheapest ticket.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E015",
+          "title": "Good/better/best va bad/worse/worst",
+          "example": "This one is better.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E016",
+          "title": "As…as / not as…as",
+          "example": "This bag is as big as mine.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E017",
+          "title": "Too + adjective / adjective + enough",
+          "example": "It’s too heavy. It’s big enough.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E018",
+          "title": "Adverbs of manner: -ly va asosiy istisnolar",
+          "example": "She speaks slowly. He runs fast.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        }
+      ]
+    },
+    {
+      "id": "E-M04",
+      "stage": "elementary",
+      "title": "O‘tgan holat — was/were",
+      "prerequisites": "B-M02 va B-M09.",
+      "objective": "O‘tgan joy, holat va mavjudlikni tushuntirish.",
+      "topics": [
+        {
+          "id": "E019",
+          "title": "Was/were — tasdiq",
+          "example": "I was at home.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E020",
+          "title": "Wasn’t/weren’t",
+          "example": "They weren’t tired.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E021",
+          "title": "Was/Were…? va qisqa javob",
+          "example": "Were you at school?",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E022",
+          "title": "There was/there were",
+          "example": "There was a small shop.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E023",
+          "title": "Yesterday/last…/…ago",
+          "example": "We were here two days ago.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E024",
+          "title": "O‘tgan holat bo‘yicha qisqa xabar",
+          "example": "It was cold. We were indoors.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        }
+      ]
+    },
+    {
+      "id": "E-M05",
+      "stage": "elementary",
+      "title": "Past Simple — harakatlar",
+      "prerequisites": "E-M04 va B-M08.",
+      "objective": "O‘tgan voqeani aytish va suhbatda aniqlashtirish.",
+      "topics": [
+        {
+          "id": "E025",
+          "title": "Muntazam fe’llar va -ed yozilishi",
+          "example": "play → played; study → studied.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E026",
+          "title": "-ed talaffuzi: /t/ /d/ /ɪd/",
+          "example": "walked, played, wanted.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E027",
+          "title": "Asosiy nomuntazam fe’llar: guruhlar bilan",
+          "example": "go–went, see–saw, eat–ate.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E028",
+          "title": "Didn’t + base verb",
+          "example": "She didn’t go.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E029",
+          "title": "Did…? va qisqa javoblar",
+          "example": "Did you see it? Yes, I did.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E030",
+          "title": "Wh-savollar va voqea ketma-ketligi",
+          "example": "Where did you go? What happened next?",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        }
+      ]
+    },
+    {
+      "id": "E-M06",
+      "stage": "elementary",
+      "title": "Hikoya va jarayon",
+      "prerequisites": "E-M05 va B-M10.",
+      "objective": "Voqea paytidagi harakatni tasvirlash va sodda hikoya tuzish.",
+      "topics": [
+        {
+          "id": "E031",
+          "title": "Past Continuous tasdiq",
+          "example": "I was reading.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E032",
+          "title": "Past Continuous inkor/savol",
+          "example": "Were they sleeping?",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E033",
+          "title": "Past Simple va Past Continuous",
+          "example": "I was walking when it started to rain.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E034",
+          "title": "When/while — sodda vaqt bog‘lash",
+          "example": "While I was reading, she was drawing.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E035",
+          "title": "Hikoya bog‘lovchilari va voqea tartibi",
+          "example": "then, after that, suddenly, finally.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E036",
+          "title": "Rasmlar asosida sodda hikoya",
+          "example": "Vaqti, qahramoni va yakuni bor hikoya.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        }
+      ]
+    },
+    {
+      "id": "E-M07",
+      "stage": "elementary",
+      "title": "Kelajak rejalari va kelishuv",
+      "prerequisites": "B-M10, E-M05.",
+      "objective": "Niyat, kelishilgan reja va sodda bashoratni farqlash.",
+      "topics": [
+        {
+          "id": "E037",
+          "title": "Be going to — niyat va reja",
+          "example": "I’m going to visit my grandma.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E038",
+          "title": "Going to — inkor/savol",
+          "example": "Are you going to come?",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E039",
+          "title": "Present Continuous — kelishilgan uchrashuv",
+          "example": "We’re meeting at five.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E040",
+          "title": "Will/won’t — sodda bashorat",
+          "example": "It will be sunny.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E041",
+          "title": "Will — hozirgi qaror/taklif/yordam",
+          "example": "I’ll help you.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E042",
+          "title": "Kelajak shakllarini vaziyatda tanlash",
+          "example": "Niyat, kelishuv va tezkor qarorni ajratish.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        }
+      ]
+    },
+    {
+      "id": "E-M08",
+      "stage": "elementary",
+      "title": "Qoida, maslahat va taklif",
+      "prerequisites": "B-M07 va E-M07.",
+      "objective": "Zarurat, taqiq, maslahat va odobli so‘rovni ifodalash.",
+      "topics": [
+        {
+          "id": "E043",
+          "title": "Have to/don’t have to",
+          "example": "We have to wear a uniform.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E044",
+          "title": "Must/mustn’t va taqiq",
+          "example": "You mustn’t run here.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E045",
+          "title": "Should/shouldn’t",
+          "example": "You should rest.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E046",
+          "title": "Could — o‘tgan qobiliyat va odobli iltimos",
+          "example": "I could swim at six. Could you help me?",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E047",
+          "title": "Would like to / Would you like…?",
+          "example": "Would you like to join us?",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E048",
+          "title": "Shall we…?/Let’s…/How about…?",
+          "example": "How about playing outside?",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        }
+      ]
+    },
+    {
+      "id": "E-M09",
+      "stage": "elementary",
+      "title": "Shart, maqsad va sabab",
+      "prerequisites": "E-M07–E-M08.",
+      "objective": "Sodda shart, sabab va maqsadni tushuntirish.",
+      "topics": [
+        {
+          "id": "E049",
+          "title": "Zero Conditional — sodda doimiy natija",
+          "example": "If you heat ice, it melts.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E050",
+          "title": "First Conditional — sodda mumkin kelajak",
+          "example": "If it rains, we’ll stay inside.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E051",
+          "title": "When va if — kelajak vaziyati",
+          "example": "When I arrive, I’ll call you.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E052",
+          "title": "Because/so va sabab-natija",
+          "example": "I was tired, so I went home.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E053",
+          "title": "Infinitive of purpose",
+          "example": "I went to the shop to buy bread.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E054",
+          "title": "Want/need/plan/hope + to",
+          "example": "We plan to visit the museum.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        }
+      ]
+    },
+    {
+      "id": "E-M10",
+      "stage": "elementary",
+      "title": "Tajriba va hozirgi natija",
+      "prerequisites": "E-M05; o‘tgan shakllar qaytariladi.",
+      "objective": "Sodda tajriba haqida so‘rash va hozirgi natijani aytish.",
+      "topics": [
+        {
+          "id": "E055",
+          "title": "Past participle — asosiy fe’llar",
+          "example": "go–went–gone; see–saw–seen.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E056",
+          "title": "Present Perfect tasdiq/inkor",
+          "example": "I’ve finished. She hasn’t arrived.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E057",
+          "title": "Present Perfect savol va qisqa javob",
+          "example": "Have you seen it?",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E058",
+          "title": "Ever/never — hayotiy tajriba",
+          "example": "Have you ever ridden a horse?",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E059",
+          "title": "Just/already/yet — sodda natija",
+          "example": "I’ve just finished.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E060",
+          "title": "Present Perfect va Past Simple — kirish",
+          "example": "I’ve seen it. I saw it yesterday.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        }
+      ]
+    },
+    {
+      "id": "E-M11",
+      "stage": "elementary",
+      "title": "Joy, yo‘l va sayohat",
+      "prerequisites": "B-M05, B-M09 va E-M07.",
+      "objective": "Manzil topish, jadvalni tushunish va sayohat xizmatidan foydalanish.",
+      "topics": [
+        {
+          "id": "E061",
+          "title": "Shahar joylari va xizmatlar",
+          "example": "library, hospital, station, post office.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E062",
+          "title": "Harakat predloglari",
+          "example": "to, from, into, out of, across, through.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E063",
+          "title": "Yo‘l so‘rash va ko‘rsatish",
+          "example": "Go straight. Turn left at the bank.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E064",
+          "title": "Transport/chipta/jadval va sayohat sanalari",
+          "example": "The train leaves at quarter past ten.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E065",
+          "title": "Mehmonxona/yo‘qolgan buyum va yordam",
+          "example": "I’ve lost my bag. Can you help?",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E066",
+          "title": "Manzil va yo‘nalishni matndan aniqlash",
+          "example": "Belgilar, xarita va jadvalni birlashtirish.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        }
+      ]
+    },
+    {
+      "id": "E-M12",
+      "stage": "elementary",
+      "title": "Bog‘langan gap va tabiiy ifoda",
+      "prerequisites": "E-M01 va E-M09.",
+      "objective": "Odam, buyum va ishni sodda bog‘langan gap bilan aniqlash.",
+      "topics": [
+        {
+          "id": "E067",
+          "title": "Who/which/that — defining relative kirish",
+          "example": "The girl who lives next door.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E068",
+          "title": "Like/enjoy + -ing va would like + to",
+          "example": "I enjoy reading. I’d like to read it.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E069",
+          "title": "Verb + object + to",
+          "example": "I want you to help.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E070",
+          "title": "Fe’l-predlog birikmalari",
+          "example": "listen to, wait for, look at.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E071",
+          "title": "Kundalik phrasal verbs",
+          "example": "get up, turn on, put on, look for.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E072",
+          "title": "So/but/although va sodda qarama-qarshilik",
+          "example": "Although it was cold, we went outside.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        }
+      ]
+    },
+    {
+      "id": "E-M13",
+      "stage": "elementary",
+      "title": "Keng lug‘at va ijtimoiy vaziyatlar",
+      "prerequisites": "E-M01–E-M12 dagi mos tuzilmalar; domenlar oldin ham beriladi.",
+      "objective": "O‘rgangan shakllarni turli kundalik sohalarda qo‘llash.",
+      "topics": [
+        {
+          "id": "E073",
+          "title": "Sog‘liq, tana va yordam so‘rash",
+          "example": "I’ve got a headache. I need help.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E074",
+          "title": "Sport, bo‘sh vaqt va taklifga javob",
+          "example": "I’d love to, but I can’t.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E075",
+          "title": "Kasblar, maktab ishlari va kelajak istagi",
+          "example": "I’d like to be a vet.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E076",
+          "title": "Texnologiya va sodda yo‘riqnoma",
+          "example": "Save the file, then close the window.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E077",
+          "title": "Tabiat/hayvonlar/atrof-muhit",
+          "example": "We should keep the park clean.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E078",
+          "title": "Hislar, fikr va muloyim kelishmovchilik",
+          "example": "I think it’s good, but I prefer this one.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        }
+      ]
+    },
+    {
+      "id": "E-M14",
+      "stage": "elementary",
+      "title": "A2 ko‘nikmalari va yakuniy bog‘lash",
+      "prerequisites": "E-M01–E-M13; phonics va ko‘nikmalar yo‘li.",
+      "objective": "Kundalik yangi vaziyatda bog‘langan og‘zaki va yozma javob berish.",
+      "topics": [
+        {
+          "id": "E079",
+          "title": "Qisqa email: taklif/qabul/rad va uzr",
+          "example": "Thanks for inviting me. I can come.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E080",
+          "title": "Sodda paragraf: tajriba/reja/tavsif",
+          "example": "O‘tgan voqea va keyingi rejani yozish.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E081",
+          "title": "Tinglash: asosiy mazmun va detallar",
+          "example": "Kim, qachon, sabab va keyingi harakatni topish.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E082",
+          "title": "O‘qish: e’lon/xabar/hikoya/yo‘riqnoma",
+          "example": "Kerakli ma’lumotni topib amal qilish.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E083",
+          "title": "Gapirish: ketma-ket savol-javob va qayta ifodalash",
+          "example": "Ma’lumot almashish, tushunmaganda aniqlashtirish.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        },
+        {
+          "id": "E084",
+          "title": "A2 yakuniy amaliy tekshiruv va portfolio",
+          "example": "Sayohat + xarid + hikoya + reja: yangi sharoitda.",
+          "status": "outline",
+          "vocabularyBankStatus": "pending",
+          "gameplayStatus": "pending"
+        }
+      ]
+    }
+  ]
+}

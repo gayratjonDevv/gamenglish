@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "zero-001",
+  "levels": [
+    {
+      "schemaVersion": 1,
+      "id": "zero.hello",
+      "ordinal": 1,
+      "topicId": "Z001",
+      "sceneId": "home",
+      "title": "Yangi do‘stga salom",
+      "status": "draft",
+      "prerequisites": [],
+      "requiredWords": [],
+      "taughtWords": ["word.hello", "word.goodbye"],
+      "cueIds": ["cue.welcome", "cue.word.hello", "cue.word.goodbye"],
+      "tasks": [
+        {
+          "id": "welcome",
+          "kind": "instruction",
+          "cueId": "cue.welcome"
+        },
+        {
+          "id": "greet-cat",
+          "kind": "interact",
+          "targetNodeId": "cat",
+          "wordId": "word.hello",
+          "cueId": "cue.word.hello"
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "id": "zero.please",
+      "ordinal": 2,
+      "topicId": "Z002",
+      "sceneId": "home",
+      "title": "Muloyim so‘raymiz",
+      "status": "draft",
+      "prerequisites": ["zero.hello"],
+      "requiredWords": [
+        {
+          "wordId": "word.hello",
+          "receptive": true,
+          "productive": true
+        }
+      ],
+      "taughtWords": ["word.please", "word.thank-you"],
+      "cueIds": ["cue.word.please", "cue.word.thank-you"],
+      "tasks": [
+        {
+          "id": "please",
+          "kind": "instruction",
+          "cueId": "cue.word.please"
+        },
+        {
+          "id": "thank-cat",
+          "kind": "interact",
+          "targetNodeId": "cat",
+          "wordId": "word.thank-you",
+          "cueId": "cue.word.thank-you"
+        }
+      ]
+    }
+  ]
+}

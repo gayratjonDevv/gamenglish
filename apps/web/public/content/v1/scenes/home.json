@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "home",
+  "label": "Uy va yangi do‘st",
+  "camera": {
+    "position": [0, 3, 6],
+    "target": [0, 1, 0]
+  },
+  "bounds": {
+    "min": [-5, -5],
+    "max": [5, 5],
+    "groundY": 0
+  },
+  "colliders": [],
+  "nodes": [
+    {
+      "id": "child",
+      "assetId": "hero.child",
+      "role": "player",
+      "position": [0, 0, 0],
+      "rotation": [0, 0, 0],
+      "scale": 1,
+      "interactive": false
+    },
+    {
+      "id": "cat",
+      "assetId": "pet.cat",
+      "role": "pet",
+      "position": [1.5, 0, 0],
+      "rotation": [0, 0, 0],
+      "scale": 1,
+      "interactive": true
+    },
+    {
+      "id": "home",
+      "assetId": "world.home",
+      "role": "static",
+      "position": [0, 0, 0],
+      "rotation": [0, 0, 0],
+      "scale": 1,
+      "interactive": false
+    },
+    {
+      "id": "bowl",
+      "assetId": "prop.bowl",
+      "role": "static",
+      "position": [1, 0, -1],
+      "rotation": [0, 0, 0],
+      "scale": 1,
+      "interactive": true
+    },
+    {
+      "id": "ball",
+      "assetId": "prop.ball",
+      "role": "static",
+      "position": [2, 0, -1],
+      "rotation": [0, 0, 0],
+      "scale": 1,
+      "interactive": true
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "revision": "dev-001",
+  "cues": [
+    {
+      "id": "cue.word.hello",
+      "lines": [
+        {
+          "locale": "uz",
+          "text": "salom",
+          "assetId": "audio.word.hello.uz"
+        },
+        {
+          "locale": "en",
+          "text": "hello",
+          "assetId": "audio.word.hello.en"
+        }
+      ]
+    },
+    {
+      "id": "cue.word.goodbye",
+      "lines": [
+        {
+          "locale": "uz",
+          "text": "xayr",
+          "assetId": "audio.word.goodbye.uz"
+        },
+        {
+          "locale": "en",
+          "text": "goodbye",
+          "assetId": "audio.word.goodbye.en"
+        }
+      ]
+    },
+    {
+      "id": "cue.word.please",
+      "lines": [
+        {
+          "locale": "uz",
+          "text": "iltimos",
+          "assetId": "audio.word.please.uz"
+        },
+        {
+          "locale": "en",
+          "text": "please",
+          "assetId": "audio.word.please.en"
+        }
+      ]
+    },
+    {
+      "id": "cue.word.thank-you",
+      "lines": [
+        {
+          "locale": "uz",
+          "text": "rahmat",
+          "assetId": "audio.word.thank-you.uz"
+        },
+        {
+          "locale": "en",
+          "text": "thank you",
+          "assetId": "audio.word.thank-you.en"
+        }
+      ]
+    },
+    {
+      "id": "cue.welcome",
+      "lines": [
+        {
+          "locale": "uz",
+          "text": "Salom! Birga yangi do‘stimiz bilan tanishamiz.",
+          "assetId": "audio.welcome.uz"
+        },
+        {
+          "locale": "en",
+          "text": "Hello! Let’s meet our new friend.",
+          "assetId": "audio.welcome.en"
+        }
+      ]
+    }
+  ]
+}

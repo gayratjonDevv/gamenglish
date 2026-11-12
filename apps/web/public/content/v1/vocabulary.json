@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "words": [
+    {
+      "id": "word.hello",
+      "en": "hello",
+      "uz": "salom",
+      "topicId": "Z001",
+      "cueId": "cue.word.hello"
+    },
+    {
+      "id": "word.goodbye",
+      "en": "goodbye",
+      "uz": "xayr",
+      "topicId": "Z001",
+      "cueId": "cue.word.goodbye"
+    },
+    {
+      "id": "word.please",
+      "en": "please",
+      "uz": "iltimos",
+      "topicId": "Z002",
+      "cueId": "cue.word.please"
+    },
+    {
+      "id": "word.thank-you",
+      "en": "thank you",
+      "uz": "rahmat",
+      "topicId": "Z002",
+      "cueId": "cue.word.thank-you"
+    }
+  ]
+}

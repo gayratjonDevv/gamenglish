@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "revision": "dev-001",
+  "assets": [
+    {
+      "id": "hero.child",
+      "kind": "model",
+      "label": "Bola avatari",
+      "status": "missing",
+      "reason": "Licensed GLB asset not selected or imported",
+      "license": "selection-pending",
+      "source": "selection-pending"
+    },
+    {
+      "id": "pet.cat",
+      "kind": "model",
+      "label": "Mushukcha",
+      "status": "missing",
+      "reason": "Licensed GLB asset not selected or imported",
+      "license": "selection-pending",
+      "source": "selection-pending"
+    },
+    {
+      "id": "world.home",
+      "kind": "model",
+      "label": "Uy va hovli",
+      "status": "missing",
+      "reason": "Licensed GLB asset not selected or imported",
+      "license": "selection-pending",
+      "source": "selection-pending"
+    },
+    {
+      "id": "prop.bowl",
+      "kind": "model",
+      "label": "Ovqat idishi",
+      "status": "missing",
+      "reason": "Licensed GLB asset not selected or imported",
+      "license": "selection-pending",
+      "source": "selection-pending"
+    },
+    {
+      "id": "prop.ball",
+      "kind": "model",
+      "label": "Koptok",
+      "status": "missing",
+      "reason": "Licensed GLB asset not selected or imported",
+      "license": "selection-pending",
+      "source": "selection-pending"
+    },
+    {
+      "id": "audio.word.hello.uz",
+      "kind": "audio",
+      "label": "salom",
+      "status": "missing",
+      "reason": "Upload approved recorded voice file",
+      "license": "recording-rights-pending",
+      "source": "user-recording-pending"
+    },
+    {
+      "id": "audio.word.hello.en",
+      "kind": "audio",
+      "label": "hello",
+      "status": "missing",
+      "reason": "Upload approved recorded voice file",
+      "license": "recording-rights-pending",
+      "source": "user-recording-pending"
+    },
+    {
+      "id": "audio.word.goodbye.uz",
+      "kind": "audio",
+      "label": "xayr",
+      "status": "missing",
+      "reason": "Upload approved recorded voice file",
+      "license": "recording-rights-pending",
+      "source": "user-recording-pending"
+    },
+    {
+      "id": "audio.word.goodbye.en",
+      "kind": "audio",
+      "label": "goodbye",
+      "status": "missing",
+      "reason": "Upload approved recorded voice file",
+      "license": "recording-rights-pending",
+      "source": "user-recording-pending"
+    },
+    {
+      "id": "audio.word.please.uz",
+      "kind": "audio",
+      "label": "iltimos",
+      "status": "missing",
+      "reason": "Upload approved recorded voice file",
+      "license": "recording-rights-pending",
+      "source": "user-recording-pending"
+    },
+    {
+      "id": "audio.word.please.en",
+      "kind": "audio",
+      "label": "please",
+      "status": "missing",
+      "reason": "Upload approved recorded voice file",
+      "license": "recording-rights-pending",
+      "source": "user-recording-pending"
+    },
+    {
+      "id": "audio.word.thank-you.uz",
+      "kind": "audio",
+      "label": "rahmat",
+      "status": "missing",
+      "reason": "Upload approved recorded voice file",
+      "license": "recording-rights-pending",
+      "source": "user-recording-pending"
+    },
+    {
+      "id": "audio.word.thank-you.en",
+      "kind": "audio",
+      "label": "thank you",
+      "status": "missing",
+      "reason": "Upload approved recorded voice file",
+      "license": "recording-rights-pending",
+      "source": "user-recording-pending"
+    },
+    {
+      "id": "audio.welcome.uz",
+      "kind": "audio",
+      "label": "Salom! Birga yangi do‘stimiz bilan tanishamiz.",
+      "status": "missing",
+      "reason": "Upload approved recorded voice file",
+      "license": "recording-rights-pending",
+      "source": "user-recording-pending"
+    },
+    {
+      "id": "audio.welcome.en",
+      "kind": "audio",
+      "label": "Hello! Let’s meet our new friend.",
+      "status": "missing",
+      "reason": "Upload approved recorded voice file",
+      "license": "recording-rights-pending",
+      "source": "user-recording-pending"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "name": "gamenglish",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=@gamenglish/web --",
+    "build": "npm run typecheck && npm run build -w @gamenglish/web",
+    "preview": "npm run preview --workspace=@gamenglish/web --",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "content:validate": "node --import tsx tools/validate-content.ts",
+    "content:stress": "node --import tsx tools/stress-content.ts",
+    "audio:inventory": "node --import tsx tools/audio-inventory.ts",
+    "check": "npm run typecheck && npm run test && npm run content:validate && npm run content:stress && npm run build",
+    "asset:register": "node --import tsx tools/register-asset.ts",
+    "content:release-check": "node --import tsx tools/validate-content.ts --release"
+  },
+  "devDependencies": {
+    "typescript": "7.0.2",
+    "vite": "8.3.8",
+    "vitest": "5.1.0",
+    "tsx": "4.20.6",
+    "@types/node": "24.10.0",
+    "fake-indexeddb": "6.2.8"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "jsx": "react-jsx",
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "paths": {
+      "@gamenglish/contracts": ["./packages/contracts/src/index.ts"],
+      "@gamenglish/engine": ["./packages/engine/src/index.ts"],
+      "@gamenglish/learning": ["./packages/learning/src/index.ts"],
+      "@gamenglish/engine/runtime": ["./packages/engine/src/GameEngine.ts"]
+    }
+  },
+  "include": ["apps", "packages", "tools", "tests", "vitest.config.ts"]
+}
