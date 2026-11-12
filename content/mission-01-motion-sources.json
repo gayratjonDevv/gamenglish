@@ -1,0 +1,34 @@
+{
+  "character": "TurboSquid 2429764, supplied by user; Standard License",
+  "expressions": "Smile / Happy / Confused / Nervous poses extracted from supplied cartoon Young Boy.blend using its FaceitControlRig; no external script execution",
+  "motions": [
+    {
+      "author": "Quaternius",
+      "license": "CC0-1.0",
+      "source": "https://quaternius.com/packs/universalanimationlibrary.html",
+      "download": "https://opengameart.org/sites/default/files/universal_animation_librarystandard.zip",
+      "sha256": "18ff1a7215f4852b320203e8aaf02a1578b5c8eef9027fbaedfcedc7b85a3ac2",
+      "clips": ["Idle_Loop", "Walk_Loop", "Idle_Talking_Loop"]
+    },
+    {
+      "author": "Mesh2Motion contributors",
+      "license": "CC0-1.0",
+      "source": "https://github.com/Mesh2Motion/mesh2motion-app",
+      "clips": ["Greeting", "Idle Listening", "Rest Pose"],
+      "files": [
+        {
+          "name": "greeting.glb",
+          "sha256": "abf286fad0374970d78e72f1d0d8ce190d4b6d976adf58d8bbd6072d873b88bf"
+        },
+        {
+          "name": "rest-pose.glb",
+          "sha256": "e1669b4f6dee30e2c0723a359b269661d85aaee46ebd20d696922d3c4c05d25a"
+        },
+        {
+          "name": "idle-listening.glb",
+          "sha256": "baf99e376c145322be3a4132603df41c9a125ec603df9f116beaca0011d20f81"
+        }
+      ]
+    }
+  ]
+}

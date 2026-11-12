@@ -1,0 +1,27 @@
+{
+  "Smile": {
+    "mouthSmileLeft": 0.23916,
+    "mouthSmileRight": 0.23917
+  },
+  "Happy": {
+    "jawOpen": 0.17862,
+    "mouthSmileLeft": 1.0,
+    "mouthSmileRight": 1.0
+  },
+  "Confused": {
+    "jawOpen": 0.15474,
+    "mouthUpperUpLeft": 0.97993,
+    "browDownRight": -0.55747,
+    "mouthShrugUpper": 0.17269
+  },
+  "Nervous": {
+    "eyeSquintLeft": 0.99999,
+    "eyeSquintRight": 1.0,
+    "jawOpen": 0.20276,
+    "mouthSmileLeft": 0.93624,
+    "mouthSmileRight": 0.93624,
+    "browInnerUp": 0.99999,
+    "noseSneerLeft": 0.5201,
+    "noseSneerRight": 0.5201
+  }
+}

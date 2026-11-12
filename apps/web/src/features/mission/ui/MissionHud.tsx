@@ -4,11 +4,13 @@ import type { AudioMode } from '../model/useMissionAudio';
 import styles from './hud.module.css';
 type Props = {
   started: boolean;
+  portrait: boolean;
+  togglePortrait: () => void;
   director: ReturnType<typeof useMissionDirector>;
   mode: AudioMode;
   open: (panel: 'menu' | 'journal') => void;
 };
-export function MissionHud({ started, director, mode, open }: Props) {
+export function MissionHud({ started, director, mode, open, portrait, togglePortrait }: Props) {
   return (
     <>
       <header className={styles.hud}>
@@ -19,14 +21,17 @@ export function MissionHud({ started, director, mode, open }: Props) {
         <div className={styles.missionBadge}>
           ZERO <span>/</span> MISSIYA 01
         </div>
-        {started && (
+        {
           <nav className={styles.tools} aria-label="O‘yin menyusi">
-            <Button onClick={() => open('journal')}>So‘zlar daftari</Button>
-            <Button onClick={() => open('menu')} aria-label="O‘yinni to‘xtatish">
-              Ⅱ
-            </Button>
+            <Button onClick={togglePortrait}>{portrait ? 'Keng kadr' : '9:16 kadr'}</Button>
+            {started && <Button onClick={() => open('journal')}>So‘zlar daftari</Button>}
+            {started && (
+              <Button onClick={() => open('menu')} aria-label="O‘yinni to‘xtatish">
+                Ⅱ
+              </Button>
+            )}
           </nav>
-        )}
+        }
       </header>
       {started && (
         <section className={styles.quest} aria-label="Joriy vazifa">

@@ -14,12 +14,18 @@ Install Python Pillow if unavailable. Put the original ZIP and city file in a lo
 ```bash
 npm ci
 npm run assets:prepare -- /absolute/path/to/uploads asset-source/m01
+npm run assets:motion-sources
+npm run assets:animate
 npm run dev
 ```
 
 The processor preserves the supplied mesh, skin and selected facial controls; downsizes images, removes facial test clips and unused/redundant morphs, repacks referenced dense AND sparse accessors, and converts the city's legacy specular/glossiness materials. Immutable asset names include a SHA-256 prefix. Full checksums are verified at load/staging. City meshes are batched by original material at runtime.
 
-No visible primitive/generated substitute world objects are used. Runtime skeletal poses provide basic idle/walk/wave motion; these are not mocap or complete authored clips. The avatar has an expression approximation during recorded audio, not phoneme-aligned lip sync. Real-device animation/art review is still needed.
+No visible primitive/generated substitute world objects are used. Five full-body animation clips are retargeted offline from the audited CC0 Quaternius and Mesh2Motion sources. Their rest-space orientations, pelvis motion, fingers and foot contact are baked into the supplied character GLB at 30 samples/second. Runtime uses AnimationMixer crossfades and a one-shot greeting. No sine-driven arm/leg animation remains. Facial presets are extracted from the artist's supplied Blender pose library, smoothly blended and combined with non-periodic blinking. The opaque black eye-occlusion fallback from the Blender-only shader is made transparent; actual eye geometry/textures remain.
+
+Source attribution, hashes and source clip names: `content/mission-01-motion-sources.json`. `assets:motion-sources` checks cached/upstream bytes; `assets:animate` bakes against the supplied model. Re-run `assets:animate` after `assets:prepare`. Model binaries stay ignored.
+
+The face diffuse texture is retained at 2K, other character textures up to 1K. The scene has closer conversation cameras, antialiasing, soft shadows and an image-based lighting probe used only for lighting. The optional 9:16 framing button adapts both camera composition and HUD using CSS container queries. These changes improve the game; they do not certify feature-film quality. Recorded audio and phoneme-aligned lip sync are still absent. Mouth flapping is removed rather than presented as lip sync.
 
 ## Lesson and progression
 

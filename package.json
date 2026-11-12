@@ -28,7 +28,9 @@
     "architecture:check": "node --import tsx tools/check-architecture.ts",
     "feature:create": "node --import tsx tools/create-feature.ts",
     "assets:prepare": "python tools/prepare-mission-assets.py",
-    "assets:stage": "node tools/stage-mission-assets.mjs"
+    "assets:stage": "node tools/stage-mission-assets.mjs",
+    "assets:motion-sources": "python tools/animation/fetchMotionSources.py",
+    "assets:animate": "node --import tsx tools/animation/bakeMissionMotion.ts"
   },
   "devDependencies": {
     "@types/node": "24.10.0",

@@ -149,7 +149,7 @@
 .practice p {
   font-size: var(--size-12);
 }
-@media (max-width: 700px) {
+@container (max-width: 700px) {
   .dialogue {
     width: calc(100% - var(--size-24));
     padding: var(--size-16);

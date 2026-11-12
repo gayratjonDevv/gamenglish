@@ -16,13 +16,14 @@ export class MissionWorld {
   readonly scene = new Scene();
   readonly actors: MissionActor[];
   readonly sun = new DirectionalLight(0xffedcf, 3.2);
-  private ambient = new HemisphereLight(0xeaf3ff, 0x817f66, 2.4);
+  private ambient = new HemisphereLight(0xeaf3ff, 0x817f66, 1.3);
   private town: Town;
   private ray = new Raycaster();
   private heightCache = new Map<string, number>();
   private destination: Vector2 | undefined;
   private step: MissionStep | undefined;
   private arrived = false;
+  private neighborDeparting = false;
   private reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
   constructor(
     assets: MissionAssets,
@@ -34,7 +35,7 @@ export class MissionWorld {
     this.scene.fog = new Fog('#c7e0e7', 48, 140);
     this.sun.position.set(15, 28, 8);
     this.sun.castShadow = true;
-    this.sun.shadow.mapSize.set(1024, 1024);
+    this.sun.shadow.mapSize.set(2048, 2048);
     Object.assign(this.sun.shadow.camera, {
       left: -14,
       right: 14,
@@ -47,7 +48,9 @@ export class MissionWorld {
     this.sun.target.position.set(14, 0, -14.6);
     this.scene.add(this.sun.target);
     const roles: MissionActorId[] = ['child', 'mother', 'neighbor'];
-    this.actors = roles.map((role) => new MissionActor(assets.boy.scene, role));
+    this.actors = roles.map(
+      (role) => new MissionActor(assets.boy.scene, role, assets.boy.animations),
+    );
     this.place('child', 8, -14.6);
     this.place('mother', 9.5, -14.9);
     this.place('neighbor', 15.2, -14.9);
@@ -73,6 +76,14 @@ export class MissionWorld {
     return height;
   }
   setStep(step: MissionStep) {
+    if (step.id === 'welcome') {
+      this.place('child', 8, -14.6);
+      this.place('mother', 9.5, -14.9);
+      this.place('neighbor', 15.2, -14.9);
+      this.neighborDeparting = false;
+    }
+    if (step.cue === 'leave') this.neighborDeparting = true;
+    if (step.cue === 'return' || step.id === 'hi') this.neighborDeparting = false;
     this.step = step;
     this.destination = undefined;
     this.arrived = false;
@@ -81,22 +92,6 @@ export class MissionWorld {
       mother = this.actors[1],
       neighbor = this.actors[2];
     if (!child || !mother || !neighbor) return;
-    if (step.kind !== 'travel') {
-      mother.root.position.set(
-        child.root.position.x - 0.6,
-        this.ground(child.root.position.x - 0.6, child.root.position.z + 0.4),
-        child.root.position.z + 0.4,
-      );
-      neighbor.root.position.set(
-        child.root.position.x + 2.2,
-        this.ground(child.root.position.x + 2.2, child.root.position.z - 0.2),
-        child.root.position.z - 0.2,
-      );
-      for (const actor of this.actors)
-        actor.root.lookAt(
-          new Vector3(child.root.position.x + 3, actor.root.position.y, child.root.position.z + 3),
-        );
-    }
     if (
       step.kind === 'travel' &&
       step.target &&
@@ -112,6 +107,14 @@ export class MissionWorld {
       step.speaker === 'Ona' ? 'mother' : step.speaker === 'Qo‘shni' ? 'neighbor' : 'child';
     this.actors.forEach((actor) => {
       actor.waving = actor.id === id && step.gesture === 'wave';
+      actor.presenting = actor.id === id && step.speaker !== 'Vazifa';
+      actor.listening = actor.id !== id;
+      actor.face.emotion =
+        actor.id === 'child' && step.id === 'worry'
+          ? 'unsure'
+          : step.kind === 'finish' || step.id === 'well-done'
+            ? 'happy'
+            : 'calm';
     });
   }
   setSpeaking(active: boolean) {
@@ -136,7 +139,7 @@ export class MissionWorld {
     this.scene.background = sky;
     this.scene.fog = new Fog(sky, 48, 140);
     this.sun.intensity = time === 'night' ? 0.3 : time === 'evening' ? 1.8 : 3.2;
-    this.ambient.intensity = time === 'night' ? 1 : 2.4;
+    this.ambient.intensity = time === 'night' ? 0.7 : 1.3;
     this.sun.color.set(time === 'evening' ? '#ffb886' : '#ffedcf');
   }
   walkToGoal() {
@@ -160,9 +163,13 @@ export class MissionWorld {
     child.moving = false;
     mother.moving = false;
     neighbor.moving = false;
-    if (this.step?.cue === 'leave') {
-      this.move(neighbor, new Vector2(0.7, 0).normalize(), delta * 0.35);
-    }
+    if (this.neighborDeparting)
+      this.approach(
+        neighbor,
+        Math.min(21.8, child.root.position.x + 5),
+        child.root.position.z - 0.2,
+        delta,
+      );
     if (this.step?.kind === 'travel') {
       if (direction.lengthSq() > 0) this.destination = undefined;
       else if (this.destination) {
@@ -176,14 +183,7 @@ export class MissionWorld {
         } else direction.normalize();
       }
       this.move(child, direction, delta);
-      const follow = new Vector2(
-        child.root.position.x + 1.2 - mother.root.position.x,
-        child.root.position.z - 0.7 - mother.root.position.z,
-      );
-      if (follow.length() > 0.65) {
-        follow.normalize();
-        this.move(mother, follow, delta);
-      }
+      this.approach(mother, child.root.position.x - 0.9, child.root.position.z + 0.4, delta);
       if (
         !this.arrived &&
         this.step.target &&
@@ -197,12 +197,34 @@ export class MissionWorld {
         this.onArrival();
       }
     }
-    for (const actor of this.actors) actor.update(delta, time, this.reducedMotion);
+    if (this.step?.kind !== 'travel') {
+      this.approach(mother, child.root.position.x - 0.9, child.root.position.z + 0.4, delta);
+      if (!this.neighborDeparting)
+        this.approach(
+          neighbor,
+          Math.min(21.8, child.root.position.x + 2.4),
+          child.root.position.z - 0.2,
+          delta,
+        );
+    }
+    for (const actor of this.actors) {
+      if (!actor.moving) {
+        const partner =
+          actor.id === 'child' ? (this.step?.speaker === 'Ona' ? mother : neighbor) : child;
+        actor.faceToward(partner.root.position.x, partner.root.position.z);
+      }
+      actor.update(delta, time, this.reducedMotion);
+    }
+  }
+  private approach(actor: MissionActor, x: number, z: number, delta: number) {
+    const direction = new Vector2(x - actor.root.position.x, z - actor.root.position.z);
+    if (direction.length() > 0.22) this.move(actor, direction.normalize(), delta);
   }
   private move(actor: MissionActor, direction: Vector2, delta: number) {
     if (direction.lengthSq() === 0) return;
-    const x = actor.root.position.x + direction.x * delta * 2;
-    const z = actor.root.position.z + direction.y * delta * 2;
+    const speed = actor.id === 'child' ? 0.95 : 1.1;
+    const x = actor.root.position.x + direction.x * delta * speed;
+    const z = actor.root.position.z + direction.y * delta * speed;
     if (x < 7 || x > 22 || z < -15.35 || z > -13.9) return;
     if (
       this.town.obstacles.some(
@@ -211,7 +233,7 @@ export class MissionWorld {
     )
       return;
     actor.root.position.set(x, this.ground(x, z), z);
-    actor.root.rotation.y = Math.atan2(direction.x, direction.y);
+    actor.faceToward(x + direction.x, z + direction.y);
     actor.moving = true;
   }
   dispose() {

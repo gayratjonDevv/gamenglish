@@ -2,7 +2,7 @@
 import argparse, hashlib, io, json, pathlib, struct, zipfile
 from PIL import Image
 
-FACE = {'eyeBlinkLeft','eyeBlinkRight','jawOpen','mouthClose','mouthFunnel','mouthPucker','mouthSmileLeft','mouthSmileRight','mouthLowerDownLeft','mouthLowerDownRight','mouthUpperUpLeft','mouthUpperUpRight'}
+FACE = {'eyeBlinkLeft','eyeBlinkRight','jawOpen','mouthClose','mouthFunnel','mouthPucker','mouthSmileLeft','mouthSmileRight','mouthLowerDownLeft','mouthLowerDownRight','mouthUpperUpLeft','mouthUpperUpRight','browDownLeft','browDownRight','browInnerUp','browOuterUpLeft','browOuterUpRight','eyeSquintLeft','eyeSquintRight','cheekSquintLeft','cheekSquintRight','mouthShrugUpper'}
 
 def read_glb(data):
     pos, document, binary = 12, None, b''
@@ -34,6 +34,13 @@ def prepare(document, binary, actor):
                 if not keep:
                     primitive.pop('targets')
     for material in document.get('materials', []):
+        # CC/Faceit occlusion uses a Blender-only shader. Its opaque black glTF
+        # fallback covers the eyeballs; disable that fallback, retain the actual eyes.
+        if material.get('name','').startswith('Std_Eye_Occlusion'):
+            material.setdefault('pbrMetallicRoughness', {})['baseColorFactor'] = [0,0,0,0]
+        specular = material.get('extensions', {}).get('KHR_materials_specular', {})
+        if 'specularColorFactor' in specular:
+            specular['specularColorFactor'] = [min(1,v) for v in specular['specularColorFactor']]
         extension = material.get('extensions', {}).pop('KHR_materials_pbrSpecularGlossiness', None)
         if extension:
             pbr = {'baseColorFactor': extension.get('diffuseFactor', [1,1,1,1]), 'metallicFactor': 0, 'roughnessFactor': 1 - extension.get('glossinessFactor', 0)}
@@ -74,7 +81,8 @@ def prepare(document, binary, actor):
         view = document['bufferViews'][image['bufferView']]
         start = view.get('byteOffset', 0)
         picture = Image.open(io.BytesIO(binary[start:start + view['byteLength']]))
-        picture.thumbnail((1024,1024) if actor else (2048,2048))
+        limit = 2048 if not actor or ('Head' in image.get('name','') and 'Diffuse' in image.get('name','')) else 1024
+        picture.thumbnail((limit,limit))
         output = io.BytesIO()
         picture.save(output, format='PNG' if image['mimeType'] == 'image/png' else 'JPEG', optimize=True)
         replacements[image['bufferView']] = output.getvalue()

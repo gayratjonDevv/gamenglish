@@ -13,6 +13,8 @@ Node 24 LTS va npm kerak. Node 22.12+ ham package engine minimumiga mos, lekin C
 ```bash
 npm ci
 npm run assets:prepare -- /absolute/path/to/uploads asset-source/m01
+npm run assets:motion-sources
+npm run assets:animate
 npm run dev
 ```
 

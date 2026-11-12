@@ -109,7 +109,7 @@
   color: var(--game-muted);
 }
 
-@media (max-width: 700px) {
+@container (max-width: 700px) {
   .hud {
     padding: var(--size-16);
     gap: var(--size-12);

@@ -10,11 +10,13 @@ import { disposeModel, loadMissionAssets, type MissionAssets } from './MissionAs
 import { MissionCamera } from './MissionCamera';
 import { MissionInput } from './MissionInput';
 import { MissionWorld } from './MissionWorld';
+import { createMissionLighting } from './MissionLighting';
 export class MissionRuntime {
   private renderer: WebGLRenderer;
   private camera = new MissionCamera();
   private input: MissionInput;
   private world?: MissionWorld;
+  private environment?: ReturnType<typeof createMissionLighting>;
   private assets?: MissionAssets;
   private abort = new AbortController();
   private resize: ResizeObserver;
@@ -31,13 +33,13 @@ export class MissionRuntime {
   ) {
     this.renderer = new WebGLRenderer({
       canvas,
-      antialias: false,
+      antialias: true,
       powerPreference: 'default',
       failIfMajorPerformanceCaveat: false,
     });
     this.renderer.outputColorSpace = SRGBColorSpace;
     this.renderer.toneMapping = ACESFilmicToneMapping;
-    this.renderer.toneMappingExposure = 1.1;
+    this.renderer.toneMappingExposure = 1.05;
     this.renderer.shadowMap.enabled = true;
     this.renderer.shadowMap.type = PCFSoftShadowMap;
     this.input = new MissionInput(canvas, this.onPointer);
@@ -60,6 +62,9 @@ export class MissionRuntime {
       this.assets = assets;
       this.emit({ type: 'loading', text: 'Sahna va yoritish tayyorlanmoqda…', progress: 0.9 });
       this.world = new MissionWorld(assets, () => this.emit({ type: 'arrived' }));
+      this.environment = createMissionLighting(this.renderer);
+      this.world.scene.environment = this.environment.texture;
+      this.world.scene.environmentIntensity = 0.45;
       if (this.step) this.world.setStep(this.step);
       this.emit({ type: 'ready' });
     } catch (error) {
@@ -91,7 +96,7 @@ export class MissionRuntime {
   private onResize = () => {
     const rect = this.canvas.getBoundingClientRect();
     if (rect.width <= 0 || rect.height <= 0) return;
-    this.renderer.setPixelRatio(Math.min(devicePixelRatio, 1.5));
+    this.renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
     this.renderer.setSize(rect.width, rect.height, false);
     this.camera.camera.aspect = rect.width / rect.height;
     this.camera.camera.updateProjectionMatrix();
@@ -136,6 +141,7 @@ export class MissionRuntime {
     this.resize.disconnect();
     this.canvas.removeEventListener('webglcontextlost', this.onContextLost);
     this.world?.dispose();
+    this.environment?.dispose();
     if (this.assets) {
       disposeModel(this.assets.boy.scene);
       disposeModel(this.assets.city.scene);

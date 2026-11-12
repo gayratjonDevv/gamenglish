@@ -14,6 +14,7 @@ import styles from './mission.module.css';
 export function MissionScreen() {
   const director = useMissionDirector();
   const [started, setStarted] = useState(false);
+  const [portrait, setPortrait] = useState(false);
   const [panel, setPanel] = useState<'none' | 'menu' | 'journal'>('none');
   const [mode, setMode] = useState<AudioMode>('subtitles');
   const scene = useMissionScene(director.step, !started || panel !== 'none', () =>
@@ -36,14 +37,24 @@ export function MissionScreen() {
     setStarted(true);
   };
   return (
-    <main className={styles.game} aria-label="GamEnglish: Birinchi salom">
+    <main
+      className={[styles.game, portrait ? styles.portrait : ''].join(' ')}
+      aria-label="GamEnglish: Birinchi salom"
+    >
       <canvas
         ref={scene.canvas}
         className={styles.canvas}
         aria-label="Uch o‘lchamli mahalla. Yurish uchun WASD yoki yerga bosing."
       />
       <div className={styles.vignette} />
-      <MissionHud started={started} director={director} mode={mode} open={setPanel} />
+      <MissionHud
+        started={started}
+        director={director}
+        mode={mode}
+        open={setPanel}
+        portrait={portrait}
+        togglePortrait={() => setPortrait((value) => !value)}
+      />
       {!scene.ready && !scene.error && (
         <div className={styles.loading}>
           <span className={styles.spinner} />

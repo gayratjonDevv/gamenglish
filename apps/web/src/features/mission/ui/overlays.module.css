@@ -170,7 +170,7 @@
   font-size: var(--size-13);
   color: var(--color-text-secondary);
 }
-@media (max-width: 700px) {
+@container (max-width: 700px) {
   .intro {
     padding: var(--size-96) var(--size-24) var(--size-48);
   }

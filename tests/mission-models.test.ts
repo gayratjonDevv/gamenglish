@@ -15,6 +15,13 @@ describe.skipIf(!prepared)('supplied mission models — geometry integration', (
     >;
     const path = (role: string) => 'asset-source' + manifest[role]!.url.replace('/assets', '');
     const boy = await readPreparedModel(path('boy'));
+    expect(boy.animations.map((clip) => clip.name)).toEqual([
+      'idle',
+      'walk',
+      'talk',
+      'wave',
+      'listen',
+    ]);
     const city = await readPreparedModel(path('city'));
     let arrivals = 0;
     const world = new MissionWorld({ boy, city }, () => arrivals++);
@@ -27,14 +34,26 @@ describe.skipIf(!prepared)('supplied mission models — geometry integration', (
       world.update(1 / 60, 1, new Vector2());
       child.root.updateMatrixWorld(true);
       expect(hand!.getWorldPosition(new Vector3()).distanceTo(before)).toBeGreaterThan(0.01);
+      child.waving = true;
+      const heights: number[] = [];
+      for (let frame = 0; frame < 360; frame++) {
+        child.update(1 / 60, frame / 60, false);
+        child.root.updateMatrixWorld(true);
+        heights.push(child.root.getObjectByName('handr')!.getWorldPosition(new Vector3()).y);
+      }
+      expect(Math.max(...heights) - Math.min(...heights)).toBeGreaterThan(0.3);
+      const shoulderHeight = child.root
+        .getObjectByName('arm_stretchr')!
+        .getWorldPosition(new Vector3()).y;
+      expect(heights.at(-1)!).toBeLessThan(shoulderHeight - 0.2);
       for (const id of ['walk', 'walk-again']) {
         const step = firstHello.steps.find((item) => item.id === id)!;
         world.setStep(step);
         world.walkToGoal();
-        for (let frame = 0; frame < 400; frame++) world.update(1 / 60, frame / 60, new Vector2());
+        for (let frame = 0; frame < 600; frame++) world.update(1 / 60, frame / 60, new Vector2());
       }
       expect(arrivals).toBe(2);
-      for (let frame = 0; frame < 400; frame++) world.update(1 / 60, frame / 60, new Vector2(1, 0));
+      for (let frame = 0; frame < 600; frame++) world.update(1 / 60, frame / 60, new Vector2(1, 0));
       expect(child.root.position.x).toBeLessThanOrEqual(22);
     } finally {
       world.dispose();
